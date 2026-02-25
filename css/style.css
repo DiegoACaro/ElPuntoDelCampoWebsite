@@ -9809,7 +9809,7 @@ h6,
   margin: auto;
 }
 .product-card {
-    background: #fff;
+    /*background: #fff;*/
     border-radius: 12px;
     overflow: hidden;
     transition: 0.3s ease;
@@ -9825,6 +9825,7 @@ h6,
     position: relative;
     /*min-height: 300px;*/
     height: 200px; 
+    background: #fff;
     /*Move lo de arriba para modificar el grid de los productos*/
     overflow: hidden;
 }
@@ -9872,12 +9873,14 @@ h6,
 .product-info {
     padding: 15px;
     text-align: center;
+    transition: 0.3s ease;
 }
 
 .product-name {
     font-weight: 600;
     margin-bottom: 5px;
     font-size: 18px;
+    color: #fff;
 }
 
 .product-brand {
@@ -9886,6 +9889,42 @@ h6,
     margin: 0;
 }
 
+.category-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 20px;
+    color: #fff;
+    background: #a30000;
+}
+
+
+
+
+
+/* Para que el texto secundario también sea blanco */
+.col[data-category] .product-brand {
+    color: rgba(255,255,255,0.85);
+}
+
+
+.product-card.herbicida {
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    color: #fff;
+}
+
+.product-card.fungicida {
+    background: linear-gradient(135deg, #7b1fa2, #4a148c);
+    color: #fff;
+}
+
+.product-card.fertilizante {
+    background-color: #1565c0;
+    color: #fff;
+}
 
 /* Contenedor con más espacio abajo */
 .filter-container {
