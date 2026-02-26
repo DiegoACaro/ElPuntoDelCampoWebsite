@@ -9844,7 +9844,6 @@ h6,
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 100, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9860,6 +9859,21 @@ h6,
     border: 2px solid #fff;
     padding: 8px 18px;
     border-radius: 30px;
+}
+
+/* Herbicida */
+.product-card.herbicida .product-overlay {
+    background: rgba(46, 125, 50, 0.35);
+}
+
+/* Fungicida */
+.product-card.fungicida .product-overlay {
+    background: rgba(106, 27, 154, 0.35);
+}
+
+/* Fertilizante */
+.product-card.fertilizante .product-overlay {
+    background: rgba(21, 101, 192, 0.35);
 }
 
 .product-card:hover .product-overlay {
