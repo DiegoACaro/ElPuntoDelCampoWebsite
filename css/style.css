@@ -9871,8 +9871,8 @@ h6,
     background: rgba(106, 27, 154, 0.35);
 }
 
-/* Fertilizante */
-.product-card.fertilizante .product-overlay {
+/* Insecticida */
+.product-card.insecticida .product-overlay {
     background: rgba(21, 101, 192, 0.35);
 }
 
@@ -9935,8 +9935,8 @@ h6,
     color: #fff;
 }
 
-.product-card.fertilizante {
-    background-color: #1565c0;
+.product-card.insecticida {
+    background: linear-gradient(135deg, #1565c0, #0d47a1);
     color: #fff;
 }
 
