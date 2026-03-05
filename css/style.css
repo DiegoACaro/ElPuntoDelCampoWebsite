@@ -9881,7 +9881,10 @@ h6,
     background: rgba(255, 115, 1, 0.14);
 }
 
-
+/* Semilla */
+.product-card.semilla .product-overlay {
+    background: rgba(58, 113, 0, 0.15);
+}
 
 .product-card:hover .product-overlay {
     opacity: 1;
@@ -9949,6 +9952,11 @@ h6,
 
 .product-card.fertilizante {
     background: linear-gradient(135deg, #ef6c00, #b53f00);
+    color: #fff;
+}
+
+.product-card.semilla {
+    background: linear-gradient(135deg, #7bef00, #378400);
     color: #fff;
 }
 
