@@ -103,11 +103,17 @@
     <div class="container-fluid page-header">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Productos</h3>
                 <div class="d-inline-flex text-white">
                     <p class="m-0 text-uppercase"><a class="text-white" href="">Inicio</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
                     <p class="m-0 text-uppercase">Productos</p>
+                </div>
+                <div class="d-inline-flex text-white">
+
+                    <h3 class="display-4 text-white text-uppercase">Productos</h3>
+                    <i class="fa fa-angle-double-right fa-4x text-white pt-1 px-3"></i>
+                    <h3 class="display-4 text-white text-uppercase">Insumos</h3>
+
                 </div>
             </div>
         </div>
@@ -119,17 +125,46 @@
 
 <div class="container py-5">
 
+<!-- <div class="filter-container text-center mb-5">
+    <button class="btn filter-btn" data-filter="all">Todos</button>
+    <button class="btn filter-btn" data-filter="fertilizante">Fertilizantes</button>
+    <button class="btn filter-btn" data-filter="herbicida">Herbicidas</button>
+    <button class="btn filter-btn" data-filter="fungicida">Fungicidas</button>
+    <button class="btn filter-btn" data-filter="insecticida">Insecticidas</button>
+    <button class="btn filter-btn" data-filter="semilla">Semillas</button>
+    <button class="btn filter-btn" data-filter="herramienta">Herramientas</button>
+</div> -->
+
+
+<div class="filter-container text-center mb-5">
+
+    
     <div class="filter-container text-center mb-5">
-        <button class="btn filter-btn" data-filter="all">Todos</button>
-        <button class="btn filter-btn" data-filter="fertilizante">Fertilizantes</button>
-        <button class="btn filter-btn" data-filter="herbicida">Herbicidas</button>
-        <button class="btn filter-btn" data-filter="fungicida">Fungicidas</button>
+        
+    <button class="btn filter-btn" data-filter="all">Todos</button>
+    
+    <!-- Dropdown Insumos -->
+    <div class="dropdown filter-dropdown">
+        <button class="btn filter-btn dropdown-toggle" data-filter="insumo">
+            Insumos
+        </button>
+
+        <div class="dropdown-menu">
+            <a class="dropdown-item filter-btn" data-filter="fertilizante">Fertilizantes</a>
+            <a class="dropdown-item filter-btn" data-filter="herbicida">Herbicidas</a>
+            <a class="dropdown-item filter-btn" data-filter="fungicida">Fungicidas</a>
+            <a class="dropdown-item filter-btn" data-filter="insecticida">Insecticidas</a>
+        </div>
     </div>
 
+    <button class="btn filter-btn" data-filter="semilla">Semillas</button>
+    <button class="btn filter-btn" data-filter="herramienta">Herramientas</button>
+
+</div>
 
         <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6">
 
-            <div class="col mb-4" data-category="herbicida">
+            <div class="col mb-4" data-category="insumo herbicida">
                 <div class="product-card herbicida">
                     <div class="product-img">
                         <span class="category-badge">Nuevo</span>
@@ -145,7 +180,7 @@
                 </div>
             </div>
 
-            <div class="col mb-4" data-category="herbicida">
+            <div class="col mb-4" data-category="insumo herbicida">
                 <div class="product-card herbicida">
                     <div class="product-img">
                         <img src="img/package-2.jpg" alt="">
@@ -161,7 +196,7 @@
             </div>
 
             
-            <div class="col mb-4" data-category="herbicida">
+            <div class="col mb-4" data-category="insumo herbicida">
                 <div class="product-card herbicida">
                     <div class="product-img">
                         <img src="img/package-3.jpg" alt="">
@@ -177,7 +212,7 @@
             </div>
 
             
-            <div class="col mb-4" data-category="herbicida">
+            <div class="col mb-4" data-category="insumo herbicida">
                 <div class="product-card herbicida">
                     <div class="product-img">
                         <img src="img/package-4.jpg" alt="">
@@ -193,7 +228,7 @@
             </div>
 
             
-            <div class="col mb-4" data-category="herbicida">
+            <div class="col mb-4" data-category="insumo herbicida">
                 <div class="product-card herbicida">
                     <div class="product-img">
                         <img src="img/package-5.jpg" alt="">
@@ -209,7 +244,7 @@
             </div>
 
             
-            <div class="col mb-4" data-category="herbicida">
+            <div class="col mb-4" data-category="insumo herbicida">
                 <div class="product-card herbicida">
                     <div class="product-img">
                         <img src="img/package-6.jpg" alt="">
@@ -225,7 +260,7 @@
             </div>
 
                         
-            <div class="col mb-4" data-category="herbicida">
+            <div class="col mb-4" data-category="insumo herbicida">
                 <div class="product-card herbicida">
                     <div class="product-img">
                         <img src="img/package-7.jpg" alt="">
@@ -240,7 +275,7 @@
                 </div>
             </div>
 
-            <div class="col mb-4" data-category="herbicida">
+            <div class="col mb-4" data-category="insumo herbicida">
                 <div class="product-card herbicida">
                     <div class="product-img">
                         <img src="img/package-8.png" alt="">
@@ -256,7 +291,7 @@
             </div>
 
             
-            <div class="col mb-4" data-category="herbicida">
+            <div class="col mb-4" data-category="insumo herbicida">
                 <div class="product-card herbicida">
                     <div class="product-img">
                         <img src="img/package-9.jpg" alt="">
@@ -272,7 +307,7 @@
             </div>
 
 
-            <div class="col mb-4" data-category="herbicida">
+            <div class="col mb-4" data-category="insumo herbicida">
                 <div class="product-card herbicida">
                     <div class="product-img">
                         <img src="img/package-10.jpg" alt="">
@@ -287,7 +322,7 @@
                 </div>
             </div>
 
-            <div class="col mb-4" data-category="herbicida">
+            <div class="col mb-4" data-category="insumo herbicida">
                 <div class="product-card herbicida">
                     <div class="product-img">
                         <img src="img/package-11.jpg" alt="">
@@ -304,7 +339,7 @@
 
 
 
-            <div class="col mb-4" data-category="herbicida">
+            <div class="col mb-4" data-category="insumo herbicida">
                 <div class="product-card herbicida">
                     <div class="product-img">
                         <img src="img/package-12.jpg" alt="">
@@ -320,7 +355,7 @@
             </div>
 
 
-            <div class="col mb-4" data-category="herbicida">
+            <div class="col mb-4" data-category="insumo herbicida">
                 <div class="product-card herbicida">
                     <div class="product-img">
                         <img src="img/package-13.png" alt="">
@@ -338,7 +373,7 @@
 
 
 
-            <div class="col mb-4" data-category="herbicida">
+            <div class="col mb-4" data-category="insumo herbicida">
                 <div class="product-card herbicida">
                     <div class="product-img">
                         <img src="img/package-14.png" alt="">
@@ -356,7 +391,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-15.jpg" alt="">
@@ -376,7 +411,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-16.jpg" alt="">
@@ -395,7 +430,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <span class="category-badge">Más Vendido</span>
@@ -415,7 +450,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-18.jpg" alt="">
@@ -433,7 +468,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-19.jpeg" alt="">
@@ -451,7 +486,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-20.jpg" alt="">
@@ -470,7 +505,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-21.png" alt="">
@@ -490,7 +525,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-22.png" alt="" style="object-fit: contain; padding: 20px;">
@@ -511,7 +546,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-24.jpg" alt="">
@@ -530,7 +565,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-25.jpg" alt="">
@@ -550,7 +585,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-26.webp" alt="">
@@ -568,7 +603,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-27.webp" alt="">
@@ -587,7 +622,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-28.webp" alt="">
@@ -608,7 +643,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-29.webp" alt="" style="object-fit: contain; padding: 10px;">
@@ -628,7 +663,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-30.png" alt="">
@@ -647,7 +682,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-31.webp" alt="">
@@ -667,7 +702,7 @@
 
 
 
-            <div class="col mb-4" data-category="fungicida">
+            <div class="col mb-4" data-category="insumo fungicida">
                 <div class="product-card fungicida">
                     <div class="product-img">
                         <img src="img/package-32.webp" alt="">
@@ -686,10 +721,10 @@
 
 
 
-            <div class="col mb-4" data-category="insecticida">
+            <div class="col mb-4" data-category="insumo insecticida">
                 <div class="product-card insecticida">
                     <div class="product-img">
-                        <img src="img/package-33.webp" alt="">
+                        <img src="img/package-33.jpeg" alt="">
                         <a href="detalle-producto.html" class="product-overlay">
                             <span>Ver más</span>
                         </a>
@@ -704,7 +739,7 @@
 
 
 
-            <div class="col mb-4" data-category="insecticida">
+            <div class="col mb-4" data-category="insumo insecticida">
                 <div class="product-card insecticida">
                     <div class="product-img">
                         <img src="img/package-34.webp" alt="">
@@ -723,7 +758,7 @@
 
 
 
-            <div class="col mb-4" data-category="insecticida">
+            <div class="col mb-4" data-category="insumo insecticida">
                 <div class="product-card insecticida">
                     <div class="product-img">
                         <img src="img/package-35.png" alt=""  style="object-fit: contain; padding: 20px;">
@@ -743,7 +778,7 @@
 
 
 
-            <div class="col mb-4" data-category="insecticida">
+            <div class="col mb-4" data-category="insumo insecticida">
                 <div class="product-card insecticida">
                     <div class="product-img">
                         <img src="img/package-36.webp" alt="">
@@ -763,7 +798,7 @@
 
 
 
-            <div class="col mb-4" data-category="insecticida">
+            <div class="col mb-4" data-category="insumo insecticida">
                 <div class="product-card insecticida">
                     <div class="product-img">
                         <img src="img/package-37.jpg" alt="">
@@ -782,7 +817,7 @@
 
 
 
-            <div class="col mb-4" data-category="insecticida">
+            <div class="col mb-4" data-category="insumo insecticida">
                 <div class="product-card insecticida">
                     <div class="product-img">
                         <img src="img/package-38.webp" alt="">
@@ -802,7 +837,7 @@
 
 
 
-            <div class="col mb-4" data-category="insecticida">
+            <div class="col mb-4" data-category="insumo insecticida">
                 <div class="product-card insecticida">
                     <div class="product-img">
                         <img src="img/package-39.png" alt="">
@@ -821,7 +856,7 @@
 
 
 
-            <div class="col mb-4" data-category="insecticida">
+            <div class="col mb-4" data-category="insumo insecticida">
                 <div class="product-card insecticida">
                     <div class="product-img">
                         <img src="img/package-40.webp" alt="">
@@ -841,16 +876,16 @@
 
 
 
-            <div class="col mb-4" data-category="insecticida">
+            <div class="col mb-4" data-category="insumo insecticida">
                 <div class="product-card insecticida">
                     <div class="product-img">
-                        <img src="img/package-41.webp" alt="">
+                        <img src="img/package-41.png" alt="">
                         <a href="detalle-producto.html" class="product-overlay">
                             <span>Ver más</span>
                         </a>
                     </div>
                     <div class="product-info">
-                        <h5 class="product-name">Metomil 1L Insecticida</h5>
+                        <h5 class="product-name">Metomyl 1Kg Insecticida</h5>
                         <p class="product-brand">Mezfer</p>
                     </div>
                 </div>
@@ -862,7 +897,7 @@
 
 
 
-            <div class="col mb-4" data-category="insecticida">
+            <div class="col mb-4" data-category="insumo insecticida">
                 <div class="product-card insecticida">
                     <div class="product-img">
                         <img src="img/package-42.png" alt="">
@@ -883,7 +918,7 @@
 
 
 
-            <div class="col mb-4" data-category="insecticida">
+            <div class="col mb-4" data-category="insumo insecticida">
                 <div class="product-card insecticida">
                     <div class="product-img">
                         <img src="img/package-43.webp" alt="">
@@ -907,7 +942,7 @@
             
             
             
-            <div class="col mb-4" data-category="insecticida">
+            <div class="col mb-4" data-category="insumo insecticida">
                 <div class="product-card insecticida">
                     <div class="product-img">
                         <img src="img/package-44.webp" alt="">
@@ -926,10 +961,10 @@
             
             
             
-            <div class="col mb-4" data-category="insecticida">
+            <div class="col mb-4" data-category="insumo insecticida">
                 <div class="product-card insecticida">
                     <div class="product-img">
-                        <img src="img/package-45.webp" alt="">
+                        <img src="img/package-45.jpeg" alt="">
                         <a href="detalle-producto.html" class="product-overlay">
                             <span>Ver más</span>
                         </a>
@@ -944,7 +979,7 @@
             
             
             
-            <div class="col mb-4" data-category="insecticida">
+            <div class="col mb-4" data-category="insumo insecticida">
                 <div class="product-card insecticida">
                     <div class="product-img">
                         <img src="img/package-46.webp" alt="">
@@ -953,7 +988,7 @@
                         </a>
                     </div>
                     <div class="product-info">
-                        <h5 class="product-name">Kapes 100gr Insecticida</h5>
+                        <h5 class="product-name">Kapex 100gr Insecticida</h5>
                         <p class="product-brand">Laserna</p>
                     </div>
                 </div>
@@ -962,12 +997,365 @@
             
             
             
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-47.jpg" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Micronutres 1L Fertilizante</h5>
+                        <p class="product-brand">Agrosagi</p>
+                    </div>
+                </div>
+            </div>
+
+
+
             
-            
-            
-            
-            
-            
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-48.jpg" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Extractum Raíz 1L Fertilizante</h5>
+                        <p class="product-brand">Agrosagi</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-49.jpg" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Zincobor 1L Fertilizante</h5>
+                        <p class="product-brand">Agrosagi</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-50.png" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Stimplex 1L Fertilizante</h5>
+                        <p class="product-brand">Cosmoagro</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-51.webp" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">R-llenito 1L Fertilizante</h5>
+                        <p class="product-brand">Bio-crop</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-52.webp" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Kafom 1L Fertilizante</h5>
+                        <p class="product-brand">Disan</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-53.jpg" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Green cabe 1L Fertilizante</h5>
+                        <p class="product-brand">Plymag Colombia</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-54.png" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Cal Hard 1L Fertilizante</h5>
+                        <p class="product-brand">Innovak</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-55.webp" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">ATP 1L Fertilizante</h5>
+                        <p class="product-brand">Innovak</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-56.webp" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Selecto 1L Fertilizante</h5>
+                        <p class="product-brand">Innovak</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-57.webp" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Radigrow 1L Fertilizante</h5>
+                        <p class="product-brand">Innovak</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-58.webp" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Stimulate 1L Fertilizante</h5>
+                        <p class="product-brand">Stoller</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-59.jpeg" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Nutrizyme 1L Fertilizante</h5>
+                        <p class="product-brand">Stoller</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-60.webp" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Keylate Zinc 1L Fertilizante</h5>
+                        <p class="product-brand">Stoller</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-61.webp" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Terax 1L Fertilizante</h5>
+                        <p class="product-brand">Sanam</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-62.webp" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Vita-fol 1L Fertilizante</h5>
+                        <p class="product-brand">Folcol</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-63.webp" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Foskaprin 1L Fertilizante</h5>
+                        <p class="product-brand">Folcol</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-64.png" alt="">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Fertilaser CaB 1L Fertilizante</h5>
+                        <p class="product-brand">Laserna</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-65.png" alt="" style="object-fit: contain; padding: 0px;">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Eclipse Mix  1L Fertilizante</h5>
+                        <p class="product-brand">Soluciones Nutritivas</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col mb-4" data-category="insumo fertilizante">
+                <div class="product-card fertilizante">
+                    <div class="product-img">
+                        <img src="img/package-67.png" alt="" style="object-fit: contain; padding: 0px;">
+                        <a href="detalle-producto.html" class="product-overlay">
+                            <span>Ver más</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h5 class="product-name">Biorganik 5Kg Fertilizante</h5>
+                        <p class="product-brand">Ceres Insumo</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1095,7 +1483,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
-    <script>
+    <!-- <script>
     document.addEventListener("DOMContentLoaded", function () {
         const filterButtons = document.querySelectorAll(".filter-btn");
         const products = document.querySelectorAll(".col.mb-4");
@@ -1121,7 +1509,47 @@
             });
         });
     });
-    </script>
+    </script> -->
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const products = document.querySelectorAll(".col.mb-4");
+
+    filterButtons.forEach(button => {
+
+        button.addEventListener("click", function () {
+
+            // quitar active
+            filterButtons.forEach(btn => btn.classList.remove("active"));
+
+            // activar actual
+            this.classList.add("active");
+
+            const filter = this.getAttribute("data-filter");
+
+            products.forEach(product => {
+
+                const categories = product.getAttribute("data-category").split(" ");
+
+                if (filter === "all" || categories.includes(filter)) {
+                    product.style.display = "block";
+                } else {
+                    product.style.display = "none";
+                }
+
+            });
+
+        });
+
+    });
+
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

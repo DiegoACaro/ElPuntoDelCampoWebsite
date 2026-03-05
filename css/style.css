@@ -9876,6 +9876,13 @@ h6,
     background: rgba(21, 101, 192, 0.35);
 }
 
+/* Fertilizante */
+.product-card.fertilizante .product-overlay {
+    background: rgba(255, 115, 1, 0.14);
+}
+
+
+
 .product-card:hover .product-overlay {
     opacity: 1;
 }
@@ -9936,7 +9943,12 @@ h6,
 }
 
 .product-card.insecticida {
-    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    background: linear-gradient(135deg, #1565c0, #0b3b83);
+    color: #fff;
+}
+
+.product-card.fertilizante {
+    background: linear-gradient(135deg, #ef6c00, #b53f00);
     color: #fff;
 }
 
@@ -9969,6 +9981,33 @@ h6,
     color: white;
 }
 
+.filter-dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.filter-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.filter-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu .filter-btn {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
+}
+
 /* 📱 Móvil */
 @media (max-width: 576px) {
     .filter-btn {
@@ -9976,7 +10015,11 @@ h6,
         font-size: 0.85rem;
         margin: 4px 3px;
     }
+
+
+    
 }
+
 
 /* 📲 Tablet */
 @media (min-width: 577px) and (max-width: 991px) {
