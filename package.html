@@ -143,11 +143,14 @@
     
     <!-- Dropdown Insumos -->
     <div class="dropdown filter-dropdown">
-        <button class="btn filter-btn dropdown-toggle" data-filter="insumo">
+        <button class="btn filter-btn-notmobile dropdown-toggle" data-filter="insumo">
             Insumos
         </button>
 
         <div class="dropdown-menu">
+
+            <a class="dropdown-item filter-btn mobile-only" data-filter="all">Todos</a>
+
             <a class="dropdown-item filter-btn" data-filter="fertilizante">Fertilizantes</a>
             <a class="dropdown-item filter-btn" data-filter="herbicida">Herbicidas</a>
             <a class="dropdown-item filter-btn" data-filter="fungicida">Fungicidas</a>
@@ -2078,8 +2081,11 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+const filterButtons = [
+  ...document.querySelectorAll(".filter-btn"),
+  ...(window.innerWidth > 992 ? document.querySelectorAll(".filter-btn-notmobile") : [])
+];
 
-    const filterButtons = document.querySelectorAll(".filter-btn");
     const products = document.querySelectorAll(".col.mb-4");
 
     filterButtons.forEach(button => {
@@ -2112,6 +2118,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const dropdown = document.querySelector(".filter-dropdown");
+    const menu = dropdown.querySelector(".dropdown-menu");
+
+
+    dropdown.addEventListener("click", function(e) {
+
+        if (window.innerWidth < 992) {
+            e.stopPropagation();
+            this.classList.toggle("open");
+        }
+
+    });
+
+    // evitar que clicks dentro del menú propaguen
+    menu.addEventListener("click", function(e){
+        e.stopPropagation();
+    });
+
+    // cerrar si se toca fuera
+    document.addEventListener("click", function() {
+        dropdown.classList.remove("open");
+    });
+
+
+});
+
+</script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 

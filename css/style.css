@@ -9966,7 +9966,7 @@ h6,
 }
 
 /* Botones redondeados tipo pill */
-.filter-btn {
+.filter-btn, .filter-btn-notmobile{
     border: 2px solid #2e7d32;
     background-color: transparent;
     color: #2e7d32;
@@ -9978,17 +9978,27 @@ h6,
 }
 
 /* Hover */
-.filter-btn:hover {
+.filter-btn:hover, .filter-btn-notmobile:hover {
     background-color: #2e7d32;
     color: white;
 }
 
 /* Botón activo */
-.filter-btn.active {
+.filter-btn.active, .filter-btn-notmobile.active {
     background-color: #2e7d32;
     color: white;
 }
 
+
+
+/* Desktop */
+@media (min-width: 992px) {
+    .filter-dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+/* Menú base */
 .filter-dropdown {
     display: inline-block;
     position: relative;
@@ -10003,40 +10013,71 @@ h6,
     border-radius: 12px;
     padding: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
 }
 
-.filter-dropdown:hover .dropdown-menu {
+/* clase que abrirá el menú */
+.filter-dropdown.open .dropdown-menu {
     display: block;
 }
 
-.dropdown-menu .filter-btn {
-    display: block;
-    width: 100%;
-    margin: 5px 0;
-    text-align: center;
+/* botón X */
+.dropdown-close {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    border-radius: 15px;
+    border-color: #9d0000;
+    background: transparent;
+    font-size: 12px;
+    cursor: pointer;
+    color: #9d0000;
+}
+
+
+.dropdown-close{
+    display:none;
+}
+
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 991px){
+    .dropdown-close{
+        display:block;
+    }
 }
 
 /* 📱 Móvil */
 @media (max-width: 576px) {
-    .filter-btn {
+    .filter-btn, .filter-btn-notmobile {
         padding: 6px 14px;
         font-size: 0.85rem;
         margin: 4px 3px;
     }
 
+    .mobile-only {
+        display: block;
+    }
 
-    
+
 }
+
+
 
 
 /* 📲 Tablet */
 @media (min-width: 577px) and (max-width: 991px) {
-    .filter-btn {
+    .filter-btn, .filter-btn-notmobile {
         padding: 7px 16px;
         font-size: 0.9rem;
         margin: 4px;
     }
 }
+
+
 
 
 .whatsapp-float {
