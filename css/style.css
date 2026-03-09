@@ -9862,7 +9862,7 @@ h6,
 }
 
 /* Herbicida */
-.product-card.herbicida .product-overlay {
+.product-card.fertilizante .product-overlay {
     background: rgba(46, 125, 50, 0.35);
 }
 
@@ -9877,13 +9877,18 @@ h6,
 }
 
 /* Fertilizante */
-.product-card.fertilizante .product-overlay {
+.product-card.herbicida .product-overlay {
     background: rgba(255, 115, 1, 0.14);
 }
 
 /* Semilla */
 .product-card.semilla .product-overlay {
     background: rgba(58, 113, 0, 0.15);
+}
+
+/* Herramienta */
+.product-card.herramienta .product-overlay {
+    background: rgba(185, 185, 185, 0.35);
 }
 
 .product-card:hover .product-overlay {
@@ -9935,7 +9940,7 @@ h6,
 }
 
 
-.product-card.herbicida {
+.product-card.fertilizante {
     background: linear-gradient(135deg, #2e7d32, #1b5e20);
     color: #fff;
 }
@@ -9950,7 +9955,7 @@ h6,
     color: #fff;
 }
 
-.product-card.fertilizante {
+.product-card.herbicida {
     background: linear-gradient(135deg, #ef6c00, #b53f00);
     color: #fff;
 }
@@ -9959,6 +9964,12 @@ h6,
     background: linear-gradient(135deg, #7bef00, #378400);
     color: #fff;
 }
+
+.product-card.herramienta {
+    background: linear-gradient(135deg, #b9b9b9, #555);
+    color: #fff;
+}
+
 
 /* Contenedor con más espacio abajo */
 .filter-container {
