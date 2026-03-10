@@ -9969,7 +9969,10 @@ h6,
     background: linear-gradient(135deg, #b9b9b9, #555);
     color: #fff;
 }
-
+.product-card.jardineria {
+    background: linear-gradient(135deg, #873838, #3a2020);
+    color: #fff;
+}
 
 /* Contenedor con más espacio abajo */
 .filter-container {
