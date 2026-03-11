@@ -4027,17 +4027,18 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+
 }
 
 .navbar-brand img {
-  max-height: 50px;
-  max-width: 400px; /* ajusta según necesites */
-  width: auto; /* mantiene proporción */
+  max-height: none;
+  width: 100%; /* ajusta según necesites */ /* mantiene proporción */
+  max-width: 500px;
 }
 
 @media (max-width: 991px) { /* móvil y tablet */
   .navbar-brand img {
-    max-width: 200px; /* más pequeño en móvil */
+    max-width: 100%; /* más pequeño en móvil */
   }
 }
 
@@ -10116,4 +10117,20 @@ h6,
 .whatsapp-float:hover {
     background-color: #1ebe5d;
     transform: scale(1.1);
+}
+
+#search-input {
+    border-radius: 50px; /* bordes redondeados */
+}
+
+.buscar-producto {
+    background: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.contact-text {
+  display: flex; 
+  flex-wrap: wrap;
+  align-items: center; 
 }
