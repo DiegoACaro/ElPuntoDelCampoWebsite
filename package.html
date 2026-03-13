@@ -42,16 +42,16 @@
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-white px-3" href="">
+                        <a class="text-white px-3" href="https://wa.me/573148187437?text=Hola! Quiero información sobre un producto">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                         <!--                         <a class="text-primary px-3" href="">
                             <i class="fab fa-linkedin-in"></i>
                         </a> -->
-                        <a class="text-white px-3" href="">
+                        <a class="text-white px-3" href="https://www.instagram.com/elpuntodelcamposas/">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a class="text-white px-3" href="">
+                        <a class="text-white px-3" href="https://www.facebook.com/people/El-Punto-Del-Campo/100083134880549/">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a class="text-white pl-3" href="">
@@ -69,8 +69,8 @@
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-fluid position-relative p-0 px-lg-3" style="z-index: 9;"> 
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="index.html" class="navbar-brand">
-                    <img src="img/Logo_PDC.png" alt="El Punto del Campo" style="max-height: 50px;">
+                <a href="index.html" id="brand-header" class="navbar-brand">
+                    <img src="img/Logo_PDC.png" alt="El Punto del Campo" >
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -2227,29 +2227,30 @@
             </div> -->
             <div class="col-lg-3 col-md-6 mb-5 mx-auto">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contáctanos</h5>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>Calle ## #$$$, Barrio La Asunción, Roldanillo</p>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Calle 10 #8 - 106, Roldanillo, Valle del Cauca</p>
                 <p class="contact-text"><i class="fa fa-phone-alt mr-2"></i>+57 314 818 7437<span style="margin-inline: auto;">|</span><span style="padding-right: 10%;">+57 314 818 7437</span></p>
                 <p class="contact-text"><i class="fa fa-envelope mr-2"></i>elpuntodelcampo@hotmail.com</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Escríbenos</h6>
                 <div class="w-100">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary px-3">Sign Up</button>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" id="userMessage" class="form-control border-light" style="padding: 25px;" placeholder="Tu Mensaje">
+                            <div class="input-group-append">
+                                <a href="" id="whatsappBtn" class="btn btn-primary px-3 d-flex align-items-center" target="_blank">Enviar</a>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5 mx-auto">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Explora</h5>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                    <a class="text-white-50 mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Sobre Nosotros</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Ubicación</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Servicios</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Productos</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Contacto</a>
                 </div>
             </div>
         </div>
@@ -2291,46 +2292,6 @@
 
 
 
-<!-- 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-const filterButtons = [
-  ...document.querySelectorAll(".filter-btn"),
-  ...(window.innerWidth > 992 ? document.querySelectorAll(".filter-btn-notmobile") : [])
-];
-
-    const products = document.querySelectorAll(".col.mb-4");
-
-    filterButtons.forEach(button => {
-
-        button.addEventListener("click", function () {
-
-            // quitar active
-            filterButtons.forEach(btn => btn.classList.remove("active"));
-
-            // activar actual
-            this.classList.add("active");
-
-            const filter = this.getAttribute("data-filter");
-
-            products.forEach(product => {
-
-                const categories = product.getAttribute("data-category").split(" ");
-
-                if (filter === "all" || categories.includes(filter)) {
-                    product.style.display = "block";
-                } else {
-                    product.style.display = "none";
-                }
-
-            });
-
-        });
-
-    });
-
-});
-</script> -->
 
 <script>
 
@@ -2364,53 +2325,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </script> 
 
-
-<!-- Paginación simple sin recarga -->
-<!-- <script>
-
-
-const productsPerPage = 12;
-const products = document.querySelectorAll("#product-grid .col");
-const pagination = document.getElementById("pagination");
-
-let currentPage = 1;
-
-function showPage(page) {
-    currentPage = page;
-
-    const start = (page - 1) * productsPerPage;
-    const end = start + productsPerPage;
-
-    products.forEach((product, index) => {
-        product.style.display = (index >= start && index < end) ? "block" : "none";
-    });
-
-    updatePagination();
-}
-
-function updatePagination() {
-
-    const pageCount = Math.ceil(products.length / productsPerPage);
-    pagination.innerHTML = "";
-
-    for (let i = 1; i <= pageCount; i++) {
-        const btn = document.createElement("button");
-        btn.textContent = i;
-        btn.className = "btn btn-sm btn-outline-primary mx-1";
-
-        if (i === currentPage) {
-            btn.classList.add("active");
-        }
-
-        btn.onclick = () => showPage(i);
-
-        pagination.appendChild(btn);
-    }
-}
-
-showPage(1);
-
-</script> -->
 
 <!-- Paginación con filtros -->
 <script>
@@ -2557,6 +2471,18 @@ showPage(1);
 
 });
 
+</script>
+
+<!--Mensaje WhatsApp-->
+<script>
+const numero = "573148187437"; // Pon aquí tu número con prefijo del país, sin + ni espacios
+
+document.getElementById("whatsappBtn").addEventListener("click", function () {
+  const mensaje = document.getElementById("userMessage").value.trim();
+  if (!mensaje) return alert("Escribe un mensaje primero");
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, "_blank");
+});
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

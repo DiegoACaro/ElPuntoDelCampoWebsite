@@ -4046,6 +4046,20 @@ input[type="button"].btn-block {
   text-decoration: none;
 }
 
+
+@media (max-width: 991px) { /* móvil y tablet */
+#brand-header {
+    width: 75%; /* ajusta según necesites */
+    max-width: 300px;
+  }
+}
+
+#brand-header {
+    width: 75%; /* ajusta según necesites */
+    max-width: 300px;
+}
+
+
 .navbar-nav {
   display: flex;
   flex-direction: column;
