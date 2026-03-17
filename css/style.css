@@ -4097,15 +4097,7 @@ input[type="button"].btn-block {
   align-items: center;
 }
 
-#navbarCollapse {
-    transition: height 0.3s ease, opacity 0.3s ease;
-    opacity: 0;
-    overflow: hidden;
-}
 
-#navbarCollapse.show {
-    opacity: 1;
-}
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
@@ -4140,6 +4132,16 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+
+  #navbarCollapse {
+    transition: height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#navbarCollapse.show {
+    opacity: 1;
+}
 }
 
 @media (min-width: 576px) {
@@ -10276,6 +10278,7 @@ h6,
             height: 2.5px;
     }
 }
+
 
 /* ===========================
    MODAL PRODUCTO
