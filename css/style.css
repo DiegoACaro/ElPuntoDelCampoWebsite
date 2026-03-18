@@ -4126,6 +4126,18 @@ input[type="button"].btn-block {
   background-size: 100% 100%;
 }
 
+@media (max-width: 991px) {
+    #navbarCollapse {
+        transition: height 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    #navbarCollapse.show {
+        opacity: 1;
+    }
+}
+
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
@@ -4133,15 +4145,6 @@ input[type="button"].btn-block {
     padding-left: 0;
   }
 
-  #navbarCollapse {
-    transition: height 0.3s ease, opacity 0.3s ease;
-    opacity: 0;
-    overflow: hidden;
-}
-
-#navbarCollapse.show {
-    opacity: 1;
-}
 }
 
 @media (min-width: 576px) {
