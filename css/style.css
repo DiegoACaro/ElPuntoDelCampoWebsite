@@ -10454,3 +10454,343 @@ h6,
 #modal-mapa-footer:hover i {
     transform: translateX(4px);
 }
+
+/* CSS UBICACION */
+
+/* ============================================================
+   ubicacion.css — Página "Dónde estamos" · Cosecha Dorada
+   Fuentes: Fraunces (display) + DM Sans (cuerpo)
+   ============================================================ */
+/* ============================================================
+   ubicacion.css — Página "Dónde estamos" · Verde corporativo
+   Fuentes: Fraunces (display) + DM Sans (cuerpo)
+   Escala verde derivada de --primary: #007A36
+   ============================================================ */
+
+/* ---------- Reset mínimo ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* ============================================================
+   ubicacion.css — componente "Dónde estamos"
+   Escala verde derivada de --primary: #007A36
+   Añade el @import de Fraunces + DM Sans en tu <head> si aún no lo tienes:
+   https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=DM+Sans:wght@300;400&display=swap
+   ============================================================ */
+
+/* ---------- Variables del componente ---------- */
+.ubicacion {
+  /* Escala verde — pivote en #007A36 (primary) */
+  --green-50:  #E8F5EE;
+  --green-100: #C3E6D1;
+  --green-400: #007A36;
+  --green-600: #005E28;
+  --green-800: #003D1A;
+  --green-950: #001509;
+
+  --gray-50:  #F1EFE8;
+  --gray-100: #c7d3cb;
+  --gray-400: #808883;
+  --gray-900: #2a2c2a;
+
+  --font-display: 'Fraunces', serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  /* Layout */
+  max-width: 960px;
+  margin: 0 auto;
+  border: 1px solid var(--green-800);
+  overflow: hidden;
+  font-family: var(--font-body);
+  border-radius: 20px;
+}
+
+/* ============================================================
+   PARTE SUPERIOR
+   ============================================================ */
+.ubicacion .top {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  min-height: 360px;
+}
+
+.ubicacion .top__left {
+  background: var(--green-400);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ubicacion .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 12px;
+  color: var(--green-50);
+  margin-bottom: 1.5rem;
+  width: fit-content;
+}
+
+.ubicacion .badge__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green-50);
+  flex-shrink: 0;
+}
+
+.ubicacion .titulo {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: var(--green-50);
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+}
+
+.ubicacion .titulo em {
+  font-style: italic;
+  color: var(--green-100);
+}
+
+.ubicacion .coords {
+  font-size: 12px;
+  color: rgba(232, 245, 238, 0.65);
+  letter-spacing: 0.12em;
+  font-weight: 300;
+  border-top: 1px solid rgba(232, 245, 238, 0.25);
+  padding-top: 1rem;
+  margin-top: auto;
+}
+
+.ubicacion .top__right {
+  background: #444441;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 240px;
+}
+
+.ubicacion .top__right iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.ubicacion .mapa-placeholder {
+  text-align: center;
+  pointer-events: none;
+}
+
+.ubicacion .mapa-placeholder svg {
+  opacity: 0.2;
+}
+
+.ubicacion .mapa-placeholder p {
+  color: var(--gray-400);
+  font-size: 12px;
+  margin-top: 8px;
+  letter-spacing: 0.08em;
+}
+
+
+
+/* ============================================================
+   FOTOS
+   ============================================================ */
+.ubicacion .fotos {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  border-top: 1px solid var(--gray-100);
+}
+ 
+.ubicacion .fotos__izq,
+.ubicacion .fotos__der {
+  overflow: hidden;
+
+  height: 300px;
+}
+ 
+.ubicacion .fotos__izq {
+  border-right: 1px solid var(--gray-100);
+}
+ 
+.ubicacion .fotos__izq img,
+.ubicacion .fotos__der img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+ 
+.ubicacion .fotos__izq:hover img,
+.ubicacion .fotos__der:hover img {
+  transform: scale(1.04);
+}
+ 
+
+/* ============================================================
+   TARJETAS DE INFORMACIÓN
+   ============================================================ */
+.ubicacion .info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--gray-100);
+  background-color: var(--gray-50);
+}
+
+.ubicacion .info-card {
+  padding: 1.5rem 1.25rem;
+  border-right: 0.5px solid var(--gray-100);
+}
+
+.ubicacion .info-card:last-child {
+  border-right: none;
+}
+
+.ubicacion .info-card__icon {
+  width: 32px;
+  height: 32px;
+  background: var(--green-50);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+.ubicacion .info-card__label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--gray-400);
+  margin-bottom: 0.4rem;
+  font-weight: 400;
+}
+
+.ubicacion .info-card__value {
+  font-size: 14px;
+  color: var(--gray-900);
+  line-height: 1.6;
+}
+
+.ubicacion .info-card__value strong {
+  font-weight: 400;
+  color: var(--green-400);
+}
+
+/* ============================================================
+   BARRA INFERIOR (CTA)
+   ============================================================ */
+.ubicacion .strip {
+  background: var(--green-400);
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ubicacion .strip__text {
+  font-size: 13px;
+  color: var(--green-50);
+}
+
+.ubicacion .strip__btn {
+  display: inline-block;
+  background: var(--green-800);
+  color: var(--green-50);
+  font-family: var(--font-body);
+  font-size: 12px;
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: background 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.ubicacion .strip__btn:hover {
+  background: var(--green-950);
+  color: var(--green-100);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 720px) {
+  .ubicacion .top {
+    grid-template-columns: 1fr;
+  }
+
+  .ubicacion .top__right {
+    min-height: 220px;
+  }
+
+    .ubicacion .fotos {
+    grid-template-columns: 1fr;
+  }
+ 
+  .ubicacion .fotos__izq {
+    border-right: none;
+    border-bottom: 1px solid var(--gray-100);
+  }
+
+  .ubicacion .info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ubicacion .info-card:nth-child(2) {
+    border-right: none;
+  }
+
+  .ubicacion .info-card:nth-child(1),
+  .ubicacion .info-card:nth-child(2) {
+    border-bottom: 0.5px solid var(--gray-100);
+  }
+
+  .ubicacion .titulo {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ubicacion .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ubicacion .info-card {
+    border-right: none;
+    border-bottom: 0.5px solid var(--gray-100);
+  }
+
+  .ubicacion .info-card:last-child {
+    border-bottom: none;
+  }
+
+  .ubicacion .strip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ubicacion .strip__btn {
+    width: 100%;
+    text-align: center;
+  }
+}
