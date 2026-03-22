@@ -11143,9 +11143,6 @@ h6,
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
-  .svc-hero {
-    padding: 40px 24px 36px;
-  }
 
   .svc-hero-title {
     font-size: 34px;
