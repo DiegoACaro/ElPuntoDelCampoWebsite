@@ -325,8 +325,8 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <!-- <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script> -->
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
@@ -338,29 +338,64 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   const btn = document.getElementById('sendMessageButton');
   const success = document.getElementById('success');
 
+  // Obtener valores
+  const name    = document.getElementById('name').value.trim();
+  const email   = document.getElementById('email').value.trim();
+  const subject = document.getElementById('subject').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  // Limpiar errores previos
+  document.querySelectorAll('.help-block').forEach(el => el.textContent = '');
+  document.querySelectorAll('.control-group').forEach(el => el.classList.remove('has-error'));
+
+  // Validación
+  let valid = true;
+
+  if (!name) {
+    showError('name', 'Por favor escriba su nombre');
+    valid = false;
+  }
+  if (!email) {
+    showError('email', 'Por favor escriba su email');
+    valid = false;
+  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    showError('email', 'Por favor ingrese un email válido');
+    valid = false;
+  }
+  if (!subject) {
+    showError('subject', 'Por favor escriba el título');
+    valid = false;
+  }
+  if (!message) {
+    showError('message', 'Por favor escriba el mensaje');
+    valid = false;
+  }
+
+  if (!valid) return;
+
+  // Envío
   btn.disabled = true;
   btn.textContent = 'Enviando...';
 
-  const templateParams = {
-    from_name:  document.getElementById('name').value,
-    from_email: document.getElementById('email').value,
-    title:    document.getElementById('subject').value,
-    message:    document.getElementById('message').value,
-  };
-
-  emailjs.send('service_f7skh0p', 'template_wi9a7ke', templateParams)
+  emailjs.send('service_f7skh0p', 'template_wi9a7ke', { name, email, subject, message })
     .then(function() {
       success.innerHTML = '<p class="ct-msg ct-msg--ok">¡Mensaje enviado! Te responderemos pronto.</p>';
       document.getElementById('contactForm').reset();
       btn.disabled = false;
       btn.textContent = 'Enviar mensaje';
     }, function(error) {
-        console.log('EmailJS error:', JSON.stringify(error));
-        success.innerHTML = '<p class="ct-msg ct-msg--err">Hubo un error. Por favor intentá de nuevo.</p>';
-        btn.disabled = false;
-        btn.textContent = 'Enviar mensaje';
-        });
+      console.log('EmailJS error:', JSON.stringify(error));
+      success.innerHTML = '<p class="ct-msg ct-msg--err">Hubo un error. Por favor intentá de nuevo.</p>';
+      btn.disabled = false;
+      btn.textContent = 'Enviar mensaje';
+    });
 });
+
+function showError(fieldId, message) {
+  const group = document.getElementById(fieldId).closest('.control-group');
+  group.classList.add('has-error');
+  group.querySelector('.help-block').textContent = message;
+}
 
     </script>
 </body>
