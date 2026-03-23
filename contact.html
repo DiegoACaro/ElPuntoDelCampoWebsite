@@ -32,6 +32,9 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>emailjs.init('JDFEm-tg_3vEetLpa');</script>
 </head>
 
 <!--WhatsApp Float Icon-->
@@ -137,49 +140,110 @@
 
 
     <!-- Contact Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Escríbenos un Correo</h6>
-                <h1>Contacto para cualquier pregunta</h1>
+
+<!-- ========================================
+     SECCIÓN: CONTACTO
+     Requiere: contacto.css
+     Fuentes (agregar en <head>):
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+======================================== -->
+
+<!-- HERO -->
+<div class="ct-hero">
+  <span class="ct-eyebrow">Contacto</span>
+  <h2 class="ct-title">Escríbenos para cualquier<br><span>pregunta</span></h2>
+  <!-- <p class="ct-sub">Estamos disponibles para responder tus consultas y acompañarte en cada etapa.</p> -->
+</div>
+
+<!-- CUERPO -->
+<div class="ct-body-wrap">
+        <div class="ct-body">
+
+        <!-- Tarjetas de info -->
+        <div class="ct-sidebar">
+
+        <div class="ct-info-block">
+            <div class="ci-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.09 5.18 2 2 0 015.07 3h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.09 10.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form bg-white" style="padding: 30px;">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Tu Nombre"
-                                        required="required" data-validation-required-message="Por favor escriba su nombre" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Tu Email"
-                                        required="required" data-validation-required-message="Por favor escriba su email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Título"
-                                    required="required" data-validation-required-message="Por favor escriba el título" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Mensaje"
-                                    required="required"
-                                    data-validation-required-message="Por favor escriba el mensaje"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="text-center">
-                                <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Enviar Mensaje</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+            <div class="ci-label">Teléfono</div>
+            <div class="ci-val">+57 314 818 7437 <br> +57 314 850 7635</div>
         </div>
+
+        <div class="ct-info-block">
+            <div class="ci-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            </div>
+            <div class="ci-label">Email</div>
+            <div class="ci-val">elpuntodelcampo@hotmail.com</div>
+        </div>
+
+        <div class="ct-info-block">
+            <div class="ci-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+            </svg>
+            </div>
+            <div class="ci-label">Ubicación</div>
+            <div class="ci-val">Calle 10 #8 - 106, <br>Roldanillo, Valle del Cauca</div>
+        </div>
+
+        </div>
+
+        <!-- Formulario -->
+        <div class="ct-form">
+        <div id="success"></div>
+        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+
+            <div class="ct-form-row2">
+            <div class="control-group">
+                <label class="ct-label" for="name">Tu nombre</label>
+                <input type="text" class="ct-input" id="name" placeholder="Nombre completo"
+                required="required" data-validation-required-message="Por favor escriba su nombre">
+                <p class="help-block text-danger"></p>
+            </div>
+            <div class="control-group">
+                <label class="ct-label" for="email">Tu email</label>
+                <input type="email" class="ct-input" id="email" placeholder="correo@ejemplo.com"
+                required="required" data-validation-required-message="Por favor escriba su email">
+                <p class="help-block text-danger"></p>
+            </div>
+            </div>
+
+            <div class="control-group ct-form-row1">
+            <label class="ct-label" for="subject">Título</label>
+            <input type="text" class="ct-input" id="subject" placeholder="¿Sobre qué nos escribes?"
+                required="required" data-validation-required-message="Por favor escriba el título">
+            <p class="help-block text-danger"></p>
+            </div>
+
+            <div class="control-group ct-form-row1">
+            <label class="ct-label" for="message">Mensaje</label>
+            <textarea class="ct-input ct-textarea" id="message" rows="5"
+                placeholder="Cuéntanos en qué podemos ayudarte..."
+                required="required" data-validation-required-message="Por favor escriba el mensaje"></textarea>
+            <p class="help-block text-danger"></p>
+            </div>
+
+            <div class="ct-form-footer">
+            <span class="ct-form-note">Respondemos en menos de 24 hs.</span>
+            <button class="ct-btn" type="submit" id="sendMessageButton">Enviar mensaje</button>
+            </div>
+
+        </form>
+        </div>
+
     </div>
+</div>
+
+
+
     <!-- Contact End -->
 
 
@@ -266,6 +330,39 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const btn = document.getElementById('sendMessageButton');
+  const success = document.getElementById('success');
+
+  btn.disabled = true;
+  btn.textContent = 'Enviando...';
+
+  const templateParams = {
+    from_name:  document.getElementById('name').value,
+    from_email: document.getElementById('email').value,
+    title:    document.getElementById('subject').value,
+    message:    document.getElementById('message').value,
+  };
+
+  emailjs.send('service_f7skh0p', 'template_wi9a7ke', templateParams)
+    .then(function() {
+      success.innerHTML = '<p class="ct-msg ct-msg--ok">¡Mensaje enviado! Te responderemos pronto.</p>';
+      document.getElementById('contactForm').reset();
+      btn.disabled = false;
+      btn.textContent = 'Enviar mensaje';
+    }, function(error) {
+        console.log('EmailJS error:', JSON.stringify(error));
+        success.innerHTML = '<p class="ct-msg ct-msg--err">Hubo un error. Por favor intentá de nuevo.</p>';
+        btn.disabled = false;
+        btn.textContent = 'Enviar mensaje';
+        });
+});
+
+    </script>
 </body>
 
 </html>
