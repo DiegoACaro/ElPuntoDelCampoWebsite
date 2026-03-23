@@ -11497,6 +11497,10 @@ h6,
     flex: 1;
     min-width: 140px;
   }
+  .ci-val {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
 
   .ct-form {
     padding: 28px 24px;
