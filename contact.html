@@ -169,7 +169,7 @@
             </svg>
             </div>
             <div class="ci-label">Teléfono</div>
-            <div class="ci-val">+57 314 818 7437 <br> +57 314 850 7635</div>
+            <div class="ci-val">314 818 7437 <br> 314 850 7635</div>
         </div>
 
         <div class="ct-info-block">
@@ -340,8 +340,8 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
   // Obtener valores
   const name    = document.getElementById('name').value.trim();
-  const email   = document.getElementById('email').value.trim();
-  const subject = document.getElementById('subject').value.trim();
+  const from_email   = document.getElementById('email').value.trim();
+  const title = document.getElementById('subject').value.trim();
   const message = document.getElementById('message').value.trim();
 
   // Limpiar errores previos
@@ -355,14 +355,14 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     showError('name', 'Por favor escriba su nombre');
     valid = false;
   }
-  if (!email) {
+  if (!from_email) {
     showError('email', 'Por favor escriba su email');
     valid = false;
-  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(from_email)) {
     showError('email', 'Por favor ingrese un email válido');
     valid = false;
   }
-  if (!subject) {
+  if (!title) {
     showError('subject', 'Por favor escriba el título');
     valid = false;
   }
@@ -377,7 +377,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   btn.disabled = true;
   btn.textContent = 'Enviando...';
 
-  emailjs.send('service_f7skh0p', 'template_wi9a7ke', { name, email, subject, message })
+  emailjs.send('service_f7skh0p', 'template_wi9a7ke', { name, from_email, title, message })
     .then(function() {
       success.innerHTML = '<p class="ct-msg ct-msg--ok">¡Mensaje enviado! Te responderemos pronto.</p>';
       document.getElementById('contactForm').reset();
