@@ -29,6 +29,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSLXB5DDT3"></script>
@@ -43,55 +44,68 @@
 </head>
 
 
+<!--WhatsApp Float Icon-->
 <a href="https://wa.me/573148507635?text=Hola,%20quiero%20información%20sobre%20sus%20productos" 
    class="whatsapp-float" 
    target="_blank">
    <i class="fab fa-whatsapp"></i>
 </a>
 
+
 <body>
-    <!-- Topbar Start -->
+   <!-- Topbar Start -->
+
     <div class="container-fluid bg-primary pt-3 d-none d-lg-block">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="col-lg-7 text-center text-lg-left mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <p class="text-body" ></class><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                        <p class="text-body" style="white-space: nowrap;"><i class="fa fa-envelope mr-2"></i>elpuntodelcampo@hotmail.com</p>
                         <p class="text-body px-3">|</p>
-                        <p class="text-body"><i class="fa fa-phone-alt mr-2"></i>+57 1234567</p>
+                        <p class="text-body" style="white-space: nowrap;">
+                            <a class="text-body topbar-contact-link" href="tel:+573148187437" style="text-decoration: none;">
+                                <i class="fa fa-phone-alt mr-2"></i>+57 314 818 7437
+                            </a>
+                        </p>
+                        <p class="text-body px-3">|</p>
+                        <p class="text-body" style="white-space: nowrap;">
+                            <a class="text-body topbar-contact-link" href="tel:+573148507635" style="text-decoration: none;">
+                                <i class="fa fa-phone-alt mr-2"></i>+57 314 850 7635
+                            </a>
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center text-lg-right">
+                <div class="col-lg-5 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-white px-3" href="">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                        <!--                         <a class="text-primary px-3" href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a> -->
-                        <a class="text-white px-3" href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="text-white px-3" href="">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="text-white pl-3" href="">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                        <p class="mb-auto">
+                            <a class="text-white mx-2 topbar-social-icon wa" href="https://wa.me/573148187437?text=Hola! Quiero información sobre un producto">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a class="text-white mx-2 topbar-social-icon ig" href="https://www.instagram.com/elpuntodelcamposas/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="text-white mx-2 topbar-social-icon fb" href="https://www.facebook.com/people/El-Punto-Del-Campo/100083134880549/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="text-white mx-2 topbar-social-icon yt" href="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Topbar End -->
 
 
-    <!-- Navbar Start 44a733 -->
+    <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-fluid position-relative p-0 px-lg-3" style="z-index: 9;"> 
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand">
-                    <img src="img/Logo_PDC.png" alt="El Punto del Campo" style="max-height: 50px;">
+                <a href="index.html" id="brand-header" class="navbar-brand">
+                    <img src="img/Logo_PDC.png" alt="El Punto del Campo" >
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -99,25 +113,18 @@
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                        <a href="package.html" class="nav-item nav-link">Ubicación</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Productos</a>
-                            <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="package.html" class="dropdown-item">Insumos</a>
-                                <a href="single.html" class="dropdown-item">Herramientas</a>
-                                <a href="destination.html" class="dropdown-item">Semillas</a>
-                                <a href="guide.html" class="dropdown-item">Travel Guides</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            </div>
-                        </div>
-                        <a href="package.html" class="nav-item nav-link">Servicios</a>
+                        <a href="destination.html" class="nav-item nav-link">Ubicación</a>
+                        <a href="package.html" class="nav-item nav-link ">Productos</a>
+                        <a href="service.html" class="nav-item nav-link">Servicios</a>
                         <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                        <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
                     </div>
                 </div>
             </nav>
         </div> 
     </div>
     <!-- Navbar End -->
+
 
 
     <!-- Carousel Start -->
@@ -160,125 +167,74 @@
     <!-- Carousel End -->
 
 
-    <!-- Booking Start -->
-<!--     <div class="container-fluid booking mt-5 pb-5">
-        <div class="container pb-5">
-            <div class="bg-light shadow" style="padding: 30px;">
-                <div class="row align-items-center" style="min-height: 60px;">
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Destination</option>
-                                        <option value="1">Destination 1</option>
-                                        <option value="2">Destination 1</option>
-                                        <option value="3">Destination 1</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Depart Date" data-target="#date1" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Return Date" data-target="#date2" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Duration</option>
-                                        <option value="1">Duration 1</option>
-                                        <option value="2">Duration 1</option>
-                                        <option value="3">Duration 1</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
-                    </div>
+
+
+<!-- About Start -->
+<div class="container-fluid py-3 py-lg-5">
+    <div class="container pt-3 pt-lg-5">
+        <div class="row">
+            <div class="col-lg-6 d-none d-lg-block" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="img/about.jpg" style="object-fit: cover;">
                 </div>
             </div>
-        </div>
-    </div> -->
-    <!-- Booking End -->
-
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-lg-6" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/about.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-5 pb-lg-5">
-                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
-                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h6>
-                        <h1 class="mb-3">We Provide Best Tour Packages In Your Budget</h1>
-                        <p>Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
-                        <div class="row mb-4">
-                            <div class="col-6">
-                                <img class="img-fluid" src="img/about-1.jpg" alt="">
-                            </div>
-                            <div class="col-6">
-                                <img class="img-fluid" src="img/about-2.jpg" alt="">
-                            </div>
+            <div class="col-lg-6 col-12 pt-3 pt-lg-5 pb-lg-5">
+                <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                    <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Sobre Nosotros</h6>
+                    <h1 class="mb-3">Comprometidos con el campo</h1>
+                    <p>En El Punto del Campo ponemos a tu disposición una amplia gama de insumos agrícolas para mejorar el rendimiento y la calidad de tus cultivos.
+                        Trabajamos con productos de confianza y un servicio enfocado en ofrecer soluciones eficientes para el día a día en el campo.</p>
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <img class="img-fluid" src="img/about-1.jpg" alt="">
                         </div>
-                        <a href="" class="btn btn-primary mt-1">Book Now</a>
+                        <div class="col-6">
+                            <img class="img-fluid" src="img/about-2.jpg" alt="">
+                        </div>
                     </div>
+                    <a href="package.html" class="btn btn-primary mt-1">Ver Productos</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- About End -->
+</div>
+<!-- About End -->
 
 
     <!-- Feature Start -->
-    <div class="container-fluid pb-5">
+    <div class="container-fluid pb-5 mt-4">
         <div class="container pb-5">
             <div class="row">
                 <div class="col-md-4">
                     <div class="d-flex mb-4 mb-lg-0">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
-                            <i class="fa fa-2x fa-money-check-alt text-white"></i>
+                            <i class="bi bix2 bi-award text-white"></i>
                         </div>
                         <div class="d-flex flex-column">
-                            <h5 class="">Competitive Pricing</h5>
-                            <p class="m-0">Magna sit magna dolor duo dolor labore rebum amet elitr est diam sea</p>
+                            <h5 class="">Productos de calidad</h5>
+                            <p class="m-0">Insumos confiables para un mejor rendimiento en tus cultivos.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="d-flex mb-4 mb-lg-0">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
-                            <i class="fa fa-2x fa-award text-white"></i>
+                            <i class="bi bix2 bi-tools text-white"></i>
                         </div>
                         <div class="d-flex flex-column">
-                            <h5 class="">Best Services</h5>
-                            <p class="m-0">Magna sit magna dolor duo dolor labore rebum amet elitr est diam sea</p>
+                            <h5 class="">Soluciones agrícolas</h5>
+                            <p class="m-0">Todo lo necesario para optimizar tu trabajo agrícola diario.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="d-flex mb-4 mb-lg-0">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
-                            <i class="fa fa-2x fa-globe text-white"></i>
+                            <i class="bi bix2 bi-people-fill text-white"></i>
                         </div>
                         <div class="d-flex flex-column">
-                            <h5 class="">Worldwide Coverage</h5>
-                            <p class="m-0">Magna sit magna dolor duo dolor labore rebum amet elitr est diam sea</p>
+                            <h5 class="">Asesoría cercana</h5>
+                            <p class="m-0">Te guiamos con soluciones prácticas en cada etapa del cultivo.</p>
                         </div>
                     </div>
                 </div>
@@ -288,189 +244,943 @@
     <!-- Feature End -->
 
 
-    <!-- Destination Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
-                <h1>Explore Top Destination</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-1.jpg" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">United States</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-2.jpg" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">United Kingdom</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-3.jpg" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">Australia</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-4.jpg" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">India</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-5.jpg" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">South Africa</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-6.jpg" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">Indonesia</h5>
-                            <span>100 Cities</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
+<div class="container-fluid py-5" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/carousel-1.jpg), no-repeat center center; background-position: center;">
+    <div class="container ">
+        <div class="text-center ">
+            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Variedad y Calidad</h6>
+            <h1 class="text-white">Nuestros productos</h1>
         </div>
+
+        
+        
+        
+        
     </div>
-    <!-- Destination Start -->
 
+<!-- ===== ACORDEÓN RESPONSIVO ===== -->
+<!-- Añade en tu <head>: -->
+<!-- <link rel="stylesheet" href="acordeon.css"> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> -->
+ 
+<div class="wrap mt-4">
+ 
+ 
+  <div class="grid">
+ 
 
+<!--FERTILIZANTES ###############################################-->
 
-
-<div class="container py-5">
-    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6">
-
-        <div class="col mb-4">
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="img/package-1.jpg" alt="Fertilizante Orgánico">
-                    <a href="package.html" class="product-overlay">
-                        <span>Ver más</span>
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h5 class="product-name">Fertilizante Orgánico Premium</h5>
-                    <p class="product-brand">Marca: AgroPlus</p>
-                </div>
-            </div>
+    <div class="acc-item c1" id="s1">
+      <div class="acc-header" onclick="tog('s1')">
+        <div class="acc-color">
+          <span class="cat-num">01</span>
+          <span class="cat-name">Fertilizantes</span>
+          <div class="arrow-box">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="3">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </div>
         </div>
+        <!-- Reemplaza url() con la ruta de tu imagen -->
+        <div class="acc-image " style="background-image: url('img/fertilizanteback.jpg');"></div>
+      </div>
+      <div class="acc-body" id="b-s1">
+        <div class="acc-body-inner">
+          <div class="acc-body-content">
 
-        <div class="col mb-4">
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="img/package-2.jpg" alt="">
-                    <a href="package.html" class="product-overlay">
-                        <span>Ver más</span>
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h5 class="product-name">Herbicida Total 500ml</h5>
-                    <p class="product-brand">Marca: AgroMax</p>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="col mb-4">
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="img/package-3.jpg" alt="">
-                    <a href="package.html" class="product-overlay">
-                        <span>Ver más</span>
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h5 class="product-name">Herbicida Total 500ml</h5>
-                    <p class="product-brand">Marca: AgroMax</p>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="col mb-4">
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="img/package-4.jpg" alt="">
-                    <a href="package.html" class="product-overlay">
-                        <span>Ver más</span>
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h5 class="product-name">Herbicida Total 500ml</h5>
-                    <p class="product-brand">Marca: AgroMax</p>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="col mb-4">
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="img/package-5.jpg" alt="">
-                    <a href="package.html" class="product-overlay">
-                        <span>Ver más</span>
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h5 class="product-name">Herbicida Total 500ml</h5>
-                    <p class="product-brand">Marca: AgroMax</p>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="col mb-4">
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="img/package-6.jpg" alt="">
-                    <a href="detalle-producto.html" class="product-overlay">
-                        <span>Ver más</span>
-                    </a>
-                </div>
-                <div class="product-info">
-                    <h5 class="product-name">Herbicida Total 500ml</h5>
-                    <p class="product-brand">Marca: AgroMax</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Copias más productos aquí -->
-
+  <!-- Texto izquierda -->
+  <div class="acc-body-text">
+    <p class="desc">Descripción breve de los productos incluidos en esta categoría.</p>
+    <div class="chips">
+      <span class="chip">Subcategoría A</span>
+      <span class="chip">Subcategoría B</span>
+      <span class="chip">Subcategoría C</span>
     </div>
+  </div>
+
+  <!-- Carrusel derecha -->
+<div id="carousel-s1" class="carousel slide carousel-fade carouselprod" data-ride="false">
+
+  <!-- Indicadores opcionales -->
+    <div class="carousel-indicators">
+    <button type="button" data-target="#carousel-s1" data-slide-to="0" class="active"></button>
+    <button type="button" data-target="#carousel-s1" data-slide-to="1"></button>
+    <button type="button" data-target="#carousel-s1" data-slide-to="2"></button>
+    <button type="button" data-target="#carousel-s1" data-slide-to="3"></button>
+    <button type="button" data-target="#carousel-s1" data-slide-to="4"></button>
+    <button type="button" data-target="#carousel-s1" data-slide-to="5"></button>
+    <button type="button" data-target="#carousel-s1" data-slide-to="6"></button>
+    <button type="button" data-target="#carousel-s1" data-slide-to="7"></button>
+    </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="/producto/1">
+        <img src="img/package-47.jpg" class="d-block w-100" alt="Micronutres">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Micronutres 1L Fertilizante</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/2">
+        <img src="img/package-50.png" class="d-block w-100" alt="Stimplex 1L Fertilizante">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Stimplex 1L Fertilizante</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-51.webp" class="d-block w-100" alt="R-llenito 1L Fertilizante">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">R-llenito 1L Fertilizante</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-52.webp" class="d-block w-100" alt="Kafom 1L Fertilizante">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Kafom 1L Fertilizante</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-54.jpeg" class="d-block w-100" alt="Cal Hard 1L Fertilizante">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Cal Hard 1L Fertilizante</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-61.jpeg" class="d-block w-100" alt="Terax 1L Fertilizante">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Terax 1L Fertilizante</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-63.jpeg" class="d-block w-100" alt="Foskaprin 1L Fertilizante">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Foskaprin 1L Fertilizante</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/abono-2.jpg" class="d-block w-100" alt="Kcl 0-0-60 granulado">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Kcl 0-0-60 granulado</p>
+    </div>
+
+  </div>
+
+  <!-- Flechas -->
+    <button class="carousel-control-prev-prod" type="button" data-target="#carousel-s1" data-slide="prev">
+    <span class="carousel-control-prev-icon-prod"></span>
+    </button>
+    <button class="carousel-control-next-prod" type="button" data-target="#carousel-s1" data-slide="next">
+    <span class="carousel-control-next-icon-prod"></span>
+    </button>
+
 </div>
 
 
 
+          </div>
+        </div>
+      </div>
+    </div>
+ 
 
+<!--INSECTICIDAS ###################################################-->
+
+    <div class="acc-item c2" id="s2">
+      <div class="acc-header" onclick="tog('s2')">
+        <div class="acc-color">
+          <span class="cat-num">02</span>
+          <span class="cat-name">Insecticidas</span>
+          <div class="arrow-box">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="3">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </div>
+        </div>
+        <div class="acc-image " style="background-image: url('img/fertilizante2..jpg');"></div>
+      </div>
+      <div class="acc-body" id="b-s2">
+        <div class="acc-body-inner">
+          <div class="acc-body-content">
+            
+  <!-- Texto izquierda -->
+  <div class="acc-body-text">
+    <p class="desc">Descripción breve de los productos incluidos en esta categoría.</p>
+    <div class="chips">
+      <span class="chip">Subcategoría A</span>
+      <span class="chip">Subcategoría B</span>
+      <span class="chip">Subcategoría C</span>
+    </div>
+  </div>
+
+  <!-- Carrusel derecha -->
+<div id="carousel-s2" class="carousel slide carousel-fade carouselprod" data-ride="false">
+
+  <!-- Indicadores opcionales -->
+    <div class="carousel-indicators">
+    <button type="button" data-target="#carousel-s2" data-slide-to="0" class="active"></button>
+    <button type="button" data-target="#carousel-s2" data-slide-to="1"></button>
+    <button type="button" data-target="#carousel-s2" data-slide-to="2"></button>
+    <button type="button" data-target="#carousel-s2" data-slide-to="3"></button>
+    <button type="button" data-target="#carousel-s2" data-slide-to="4"></button>
+    <button type="button" data-target="#carousel-s2" data-slide-to="5"></button>
+    <button type="button" data-target="#carousel-s2" data-slide-to="6"></button>
+    <button type="button" data-target="#carousel-s2" data-slide-to="7"></button>
+    </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="/producto/1">
+        <img src="img/package-33.jpeg" class="d-block w-100" alt="Undamectina 1L Insecticida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Undamectina 1L Insecticida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/2">
+        <img src="img/package-34.webp" class="d-block w-100" alt="Cyper West 1L Insecticida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Cyper West 1L Insecticida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-35.png" class="d-block w-100" alt="Insectorprid 1L Insecticid">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Insectorprid 1L Insecticid</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-39.png" class="d-block w-100" alt="Bangot 1L Insecticida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Bangot 1L Insecticida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-41.jpeg" class="d-block w-100" alt="Metomil 1Kg Insecticida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Metomil 1Kg Insecticida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-43.webp" class="d-block w-100" alt="Certus 100gr Insecticida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Certus 100gr Insecticida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-45.jpeg" class="d-block w-100" alt="KOMDOR XTRA 100gr Insecticida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">KOMDOR XTRA 100gr Insecticida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-46.webp" class="d-block w-100" alt="Kapex 100gr Insecticida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Kapex 100gr Insecticida</p>
+    </div>
+
+  </div>
+
+  <!-- Flechas -->
+    <button class="carousel-control-prev-prod" type="button" data-target="#carousel-s2" data-slide="prev">
+    <span class="carousel-control-prev-icon-prod"></span>
+    </button>
+    <button class="carousel-control-next-prod" type="button" data-target="#carousel-s2" data-slide="next">
+    <span class="carousel-control-next-icon-prod"></span>
+    </button>
+
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+<!-- FUNGICIDAS #####################################################-->
+
+    <div class="acc-item c3" id="s3">
+      <div class="acc-header" onclick="tog('s3')">
+        <div class="acc-color">
+          <span class="cat-num">03</span>
+          <span class="cat-name">Fungicidas</span>
+          <div class="arrow-box">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="3">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </div>
+        </div>
+        <div class="acc-image " style="background-image: url('img/fertilizante3.png');"></div>
+      </div>
+      <div class="acc-body" id="b-s3">
+        <div class="acc-body-inner">
+          <div class="acc-body-content">
+            
+  <!-- Texto izquierda -->
+  <div class="acc-body-text">
+    <p class="desc">Descripción breve de los productos incluidos en esta categoría.</p>
+    <div class="chips">
+      <span class="chip">Subcategoría A</span>
+      <span class="chip">Subcategoría B</span>
+      <span class="chip">Subcategoría C</span>
+    </div>
+  </div>
+
+  <!-- Carrusel derecha -->
+<div id="carousel-s3" class="carousel slide carousel-fade carouselprod" data-ride="false">
+
+  <!-- Indicadores opcionales -->
+    <div class="carousel-indicators">
+    <button type="button" data-target="#carousel-s3" data-slide-to="0" class="active"></button>
+    <button type="button" data-target="#carousel-s3" data-slide-to="1"></button>
+    <button type="button" data-target="#carousel-s3" data-slide-to="2"></button>
+    <button type="button" data-target="#carousel-s3" data-slide-to="3"></button>
+    <button type="button" data-target="#carousel-s3" data-slide-to="4"></button>
+    <button type="button" data-target="#carousel-s3" data-slide-to="5"></button>
+    <button type="button" data-target="#carousel-s3" data-slide-to="6"></button>
+    <button type="button" data-target="#carousel-s3" data-slide-to="7"></button>
+    </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="/producto/1">
+        <img src="img/package-15.jpg" class="d-block w-100" alt="Antracol WP70 400gr Fungicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Antracol WP70 400gr Fungicida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/2">
+        <img src="img/package-16.jpg" class="d-block w-100" alt="Trivia WP 400gr Fungicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Trivia WP 400gr Fungicida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-17.jpg" class="d-block w-100" alt="Ridomil Gold 375gr Fungicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Ridomil Gold 375gr Fungicida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-20.jpg" class="d-block w-100" alt="Zellus 100gr Fungicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Zellus 100gr Fungicida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-21.png" class="d-block w-100" alt="Cymgota 72WP 500gr Fungicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Cymgota 72WP 500gr Fungicida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-25.jpg" class="d-block w-100" alt="Amistar Top 1L Fungicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Amistar Top 1L Fungicida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-26.webp" class="d-block w-100" alt="Gradus 43%SC 1L Fungicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Gradus 43%SC 1L Fungicida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-31.jpeg" class="d-block w-100" alt="Safertac 1L Fungicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Safertac 1L Fungicida</p>
+    </div>
+
+  </div>
+
+  <!-- Flechas -->
+    <button class="carousel-control-prev-prod" type="button" data-target="#carousel-s3" data-slide="prev">
+    <span class="carousel-control-prev-icon-prod"></span>
+    </button>
+    <button class="carousel-control-next-prod" type="button" data-target="#carousel-s3" data-slide="next">
+    <span class="carousel-control-next-icon-prod"></span>
+    </button>
+
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+<!-- HERBICIDAS #####################################################-->
+
+    <div class="acc-item c4" id="s4">
+      <div class="acc-header" onclick="tog('s4')">
+        <div class="acc-color">
+          <span class="cat-num">04</span>
+          <span class="cat-name">Herbicidas</span>
+          <div class="arrow-box">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="3">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </div>
+        </div>
+        <div class="acc-image " style="background-image: url('img/fertilizante4.jpg');"></div>
+      </div>
+      <div class="acc-body" id="b-s4">
+        <div class="acc-body-inner">
+          <div class="acc-body-content">
+            
+  <!-- Texto izquierda -->
+  <div class="acc-body-text">
+    <p class="desc">Descripción breve de los productos incluidos en esta categoría.</p>
+    <div class="chips">
+      <span class="chip">Subcategoría A</span>
+      <span class="chip">Subcategoría B</span>
+      <span class="chip">Subcategoría C</span>
+    </div>
+  </div>
+
+  <!-- Carrusel derecha -->
+<div id="carousel-s4" class="carousel slide carousel-fade carouselprod" data-ride="false">
+
+  <!-- Indicadores opcionales -->
+    <div class="carousel-indicators">
+    <button type="button" data-target="#carousel-s4" data-slide-to="0" class="active"></button>
+    <button type="button" data-target="#carousel-s4" data-slide-to="1"></button>
+    <button type="button" data-target="#carousel-s4" data-slide-to="2"></button>
+    <button type="button" data-target="#carousel-s4" data-slide-to="3"></button>
+    <button type="button" data-target="#carousel-s4" data-slide-to="4"></button>
+    <button type="button" data-target="#carousel-s4" data-slide-to="5"></button>
+    <button type="button" data-target="#carousel-s4" data-slide-to="6"></button>
+    <button type="button" data-target="#carousel-s4" data-slide-to="7"></button>
+    </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="/producto/1">
+        <img src="img/package-1.jpg" class="d-block w-100" alt="Ametrina 1kg Herbicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Ametrina 1kg Herbicida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/2">
+        <img src="img/package-4.jpg" class="d-block w-100" alt="Glyfolaser 1L Herbicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Glyfolaser 1L Herbicida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-5.jpg" class="d-block w-100" alt="Trilla 1kg Herbicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Trilla 1kg Herbicida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-7.jpg" class="d-block w-100" alt="Destierro 1L Herbicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Destierro 1L Herbicida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-9.jpg" class="d-block w-100" alt="Tordon XT 1L Herbicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Tordon XT 1L Herbicida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-11.jpg" class="d-block w-100" alt="Domazon 200 SL 1L Herbicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Domazon 200 SL 1L Herbicida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-12.jpg" class="d-block w-100" alt="Glifosato 480 SL 1L Herbicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Glifosato 480 SL 1L Herbicida</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/package-14.png" class="d-block w-100" alt="Escorpión 1L Herbicida">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Escorpión 1L Herbicida</p>
+    </div>
+
+  </div>
+
+  <!-- Flechas -->
+    <button class="carousel-control-prev-prod" type="button" data-target="#carousel-s4" data-slide="prev">
+    <span class="carousel-control-prev-icon-prod"></span>
+    </button>
+    <button class="carousel-control-next-prod" type="button" data-target="#carousel-s4" data-slide="next">
+    <span class="carousel-control-next-icon-prod"></span>
+    </button>
+
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+<!-- SUELOS ##########################################-->
+
+    <div class="acc-item c5" id="s5">
+      <div class="acc-header" onclick="tog('s5')">
+        <div class="acc-color">
+          <span class="cat-num">05</span>
+          <span class="cat-name">Suelos</span>
+          <div class="arrow-box">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="3">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </div>
+        </div>
+        <div class="acc-image" style="background-image: url('img/fertilizante6.jpg');"></div>
+      </div>
+      <div class="acc-body" id="b-s5">
+        <div class="acc-body-inner">
+          <div class="acc-body-content">
+
+  <!-- Texto izquierda -->
+  <div class="acc-body-text">
+    <p class="desc">Descripción breve de los productos incluidos en esta categoría.</p>
+    <div class="chips">
+      <span class="chip">Subcategoría A</span>
+      <span class="chip">Subcategoría B</span>
+      <span class="chip">Subcategoría C</span>
+    </div>
+  </div>
+
+  <!-- Carrusel derecha -->
+<div id="carousel-s5" class="carousel slide carousel-fade carouselprod" data-ride="false">
+
+  <!-- Indicadores opcionales -->
+    <div class="carousel-indicators">
+    <button type="button" data-target="#carousel-s5" data-slide-to="0" class="active"></button>
+    <button type="button" data-target="#carousel-s5" data-slide-to="1"></button>
+    <button type="button" data-target="#carousel-s5" data-slide-to="2"></button>
+    <button type="button" data-target="#carousel-s5" data-slide-to="3"></button>
+    <button type="button" data-target="#carousel-s5" data-slide-to="4"></button>
+    <button type="button" data-target="#carousel-s5" data-slide-to="5"></button>
+    <button type="button" data-target="#carousel-s5" data-slide-to="6"></button>
+    <button type="button" data-target="#carousel-s5" data-slide-to="7"></button>
+    </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="/producto/1">
+        <img src="img/suelo-1.webp" class="d-block w-100" alt="Tierra Mejorada 2Kg">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Tierra Mejorada 2Kg</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/2">
+        <img src="img/suelo-2.jpg" class="d-block w-100" alt="Humus Lombricompuesto 1Kg">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Humus Lombricompuesto 1Kg</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/suelo-3.jpg" class="d-block w-100" alt="ForzaMix Acondicionador de Suelos">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">ForzaMix Acondicionador de Suelos</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/suelo-4.webp" class="d-block w-100" alt="Florescencia 10-30-10">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Florescencia 10-30-10</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/suelo-5.webp" class="d-block w-100" alt="Triple 15 Fertilizante Granulado">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Triple 15 Fertilizante Granulado</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/suelo-6.png" class="d-block w-100" alt="Grama Semillas para Jardín">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Grama Semillas para Jardín</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/suelo-6.webp" class="d-block w-100" alt="Urea 46-0-0 500g">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Urea 46-0-0 500g</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/suelo-7.webp" class="d-block w-100" alt="Pastillas Follaje 45-0-0 440g">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Pastillas Follaje 45-0-0 440g</p>
+    </div>
+
+  </div>
+
+  <!-- Flechas -->
+    <button class="carousel-control-prev-prod" type="button" data-target="#carousel-s5" data-slide="prev">
+    <span class="carousel-control-prev-icon-prod"></span>
+    </button>
+    <button class="carousel-control-next-prod" type="button" data-target="#carousel-s5" data-slide="next">
+    <span class="carousel-control-next-icon-prod"></span>
+    </button>
+
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+<!-- SEMILLAS #####################################################-->
+
+    <div class="acc-item c6" id="s6">
+      <div class="acc-header" onclick="tog('s6')">
+        <div class="acc-color">
+          <span class="cat-num">06</span>
+          <span class="cat-name">Semillas</span>
+          <div class="arrow-box">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="3">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </div>
+        </div>
+        <div class="acc-image " style="background-image: url('img/fertilizante5.webp');"></div>
+      </div>
+      <div class="acc-body" id="b-s6">
+        <div class="acc-body-inner">
+          <div class="acc-body-content">
+            
+  <!-- Texto izquierda -->
+  <div class="acc-body-text">
+    <p class="desc">Descripción breve de los productos incluidos en esta categoría.</p>
+    <div class="chips">
+      <span class="chip">Subcategoría A</span>
+      <span class="chip">Subcategoría B</span>
+      <span class="chip">Subcategoría C</span>
+    </div>
+  </div>
+
+  <!-- Carrusel derecha -->
+<div id="carousel-s6" class="carousel slide carousel-fade carouselprod" data-ride="false">
+
+  <!-- Indicadores opcionales -->
+    <div class="carousel-indicators">
+    <button type="button" data-target="#carousel-s6" data-slide-to="0" class="active"></button>
+    <button type="button" data-target="#carousel-s6" data-slide-to="1"></button>
+    <button type="button" data-target="#carousel-s6" data-slide-to="2"></button>
+    <button type="button" data-target="#carousel-s6" data-slide-to="3"></button>
+    <button type="button" data-target="#carousel-s6" data-slide-to="4"></button>
+    <button type="button" data-target="#carousel-s6" data-slide-to="5"></button>
+    <button type="button" data-target="#carousel-s6" data-slide-to="6"></button>
+    <button type="button" data-target="#carousel-s6" data-slide-to="7"></button>
+    </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="/producto/1">
+        <img src="img/semilla-1.jpg" class="d-block w-100" alt="Cebolla Tokio Semilla">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Cebolla Tokio Semilla</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/2">
+        <img src="img/semilla-3.jpg" class="d-block w-100" alt="Zanahoria royal Semilla">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Zanahoria royal Semilla</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/semilla-4.jpg" class="d-block w-100" alt="Tomate chonto Semilla">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Tomate chonto Semilla</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/semilla-8.jpg" class="d-block w-100" alt="Pimentón California Semilla">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Pimentón California Semilla</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/semilla-9.jpg" class="d-block w-100" alt="Ají jalapeño Semilla">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Ají jalapeño Semilla</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/semilla-14.jpg" class="d-block w-100" alt="Perijil liso Semilla">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Perijil liso Semilla</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/semilla-19.jpg" class="d-block w-100" alt="Sandia crimson Semilla">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Sandia crimson Semilla</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/semilla-29.jpg" class="d-block w-100" alt="Tomillo Semilla">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Tomillo Semilla</p>
+    </div>
+
+  </div>
+
+  <!-- Flechas -->
+    <button class="carousel-control-prev-prod" type="button" data-target="#carousel-s6" data-slide="prev">
+    <span class="carousel-control-prev-icon-prod"></span>
+    </button>
+    <button class="carousel-control-next-prod" type="button" data-target="#carousel-s6" data-slide="next">
+    <span class="carousel-control-next-icon-prod"></span>
+    </button>
+
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+<!-- HERRAMIENTAS ################################################-->
+
+    <!-- Categoría 7: ocupa las 2 columnas en desktop -->
+    <div class="acc-item c7 full" id="s7">
+      <div class="acc-header" onclick="tog('s7')">
+        <div class="acc-color">
+          <span class="cat-num">07</span>
+          <span class="cat-name">Herramientas</span>
+          <div class="arrow-box">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="3">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </div>
+        </div>
+        <div class="acc-image " style="background-image: url('img/fertiliante7.webp');"></div>
+      </div>
+      <div class="acc-body" id="b-s7">
+        <div class="acc-body-inner">
+          <div class="acc-body-content">
+
+  <!-- Texto izquierda -->
+  <div class="acc-body-text">
+    <p class="desc">Descripción breve de los productos incluidos en esta categoría.</p>
+    <div class="chips">
+      <span class="chip">Subcategoría A</span>
+      <span class="chip">Subcategoría B</span>
+      <span class="chip">Subcategoría C</span>
+    </div>
+  </div>
+
+  <!-- Carrusel derecha -->
+<div id="carousel-s7" class="carousel slide carousel-fade carouselprod" data-ride="false">
+
+  <!-- Indicadores opcionales -->
+    <div class="carousel-indicators">
+    <button type="button" data-target="#carousel-s7" data-slide-to="0" class="active"></button>
+    <button type="button" data-target="#carousel-s7" data-slide-to="1"></button>
+    <button type="button" data-target="#carousel-s7" data-slide-to="2"></button>
+    <button type="button" data-target="#carousel-s7" data-slide-to="3"></button>
+    <button type="button" data-target="#carousel-s7" data-slide-to="4"></button>
+    <button type="button" data-target="#carousel-s7" data-slide-to="5"></button>
+    <button type="button" data-target="#carousel-s7" data-slide-to="6"></button>
+    <button type="button" data-target="#carousel-s7" data-slide-to="7"></button>
+
+    </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="/producto/1">
+        <img src="img/herramienta-1.jpeg" class="d-block w-100" alt="Fumigadora">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Fumigadora</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/2">
+        <img src="img/herramienta-2.jpeg" class="d-block w-100" alt="Fumigadora">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Fumigadora</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/herramienta-3.jpeg" class="d-block w-100" alt="Fumigadora 8L">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Fumigadora 8L</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/herramienta-4.jpeg" class="d-block w-100" alt="Fumigadora 5L">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Fumigadora 5L</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/herramienta-5.jpeg" class="d-block w-100" alt="Piedra de afilar">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Piedra de afilar</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/herramienta-6.jpeg" class="d-block w-100" alt="Tijera para podas">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Tijera para podas</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/herramienta-7.jpeg" class="d-block w-100" alt="Lima">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Lima</p>
+    </div>
+
+    <div class="carousel-item">
+      <a href="/producto/3">
+        <img src="img/herramienta-8.jpg" class="d-block w-100" alt="Guantes Todero">
+      </a>
+      <p class="text-center small text-white mt-1 mb-0">Guantes Todero</p>
+    </div>
+
+  </div>
+
+  <!-- Flechas -->
+    <button class="carousel-control-prev-prod" type="button" data-target="#carousel-s7" data-slide="prev">
+    <span class="carousel-control-prev-icon-prod"></span>
+    </button>
+    <button class="carousel-control-next-prod" type="button" data-target="#carousel-s7" data-slide="next">
+    <span class="carousel-control-next-icon-prod"></span>
+    </button>
+
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</div>
+
+
+    </div>
+    </div>
+
+
+    </div>
+
+</div>
+
+
+
+    <!-- Sección de Servicios -->
+<section class="srv-section">
+<div class="srv-container">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Dando la mejor atención</h6>
+                <h1>Nuestros Servicios</h1>
+            </div>
+<div class="srv-grid">
+    <div class="srv-card">
+        <div class="srv-image-wrapper">
+            <div class="srv-image">
+                <img src="img/Servicios-4.jpeg" alt="Servicio 01" class="srv-img">
+            </div>
+        </div>
+        <div class="srv-content">
+            <span class="srv-label">Servicio 01</span>
+            <h3 class="srv-card-title">Comercialización de insumos agrícolas</h3>
+            <p class="srv-description">Provisión de productos de calidad certificada para optimizar cada etapa del ciclo productivo en el campo. Trabajamos con proveedores de confianza y acompañamos cada compra.</p>
+        </div>
+    </div>
+    
+    <div class="srv-card">
+        <div class="srv-image-wrapper">
+            <div class="srv-image">
+                <img src="img/Servicios-2.jpeg" alt="Servicio 02" class="srv-img">
+            </div>
+        </div>
+        <div class="srv-content">
+            <span class="srv-label">Servicio 02</span>
+            <h3 class="srv-card-title">Asistencia técnica especializada</h3>
+            <p class="srv-description">Asesoría de campo con profesionales capacitados para maximizar el rendimiento de cada cultivo. Diagnóstico, seguimiento y recomendaciones adaptadas a cada realidad productiva.</p>
+        </div>
+    </div>
+    
+    <div class="srv-card">
+        <div class="srv-image-wrapper">
+            <div class="srv-image">
+                <img src="img/Servicios-5.jpeg" alt="Servicio 03" class="srv-img">
+            </div>
+        </div>
+        <div class="srv-content">
+            <span class="srv-label">Servicio 03</span>
+            <h3 class="srv-card-title">Asesoría en procesos de licitación</h3>
+            <p class="srv-description">Acompañamiento integral en la preparación, presentación y seguimiento de procesos licitatorios del sector agroindustrial. Experiencia y precisión en cada etapa.</p>
+        </div>
+    </div>
+    
+</div>
+<div class="srv-button-wrapper">
+    <a href="service.html" class="srv-button">Ver todos los servicios</a>
+</div>
+</div>
+</section>
+
+
+
+    
     <!-- Registration Start -->
-    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+    <div class="container-fluid bg-registration py-5" >
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-7 mb-5 mb-lg-0">
                     <div class="mb-4">
-                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Roldanillo Valle</h6>
-                        <h1 class="text-white"><span class="text-primary">DESCUENTO de 30%</span> Para clientes</h1>
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">En Roldanillo Valle</h6>
+                        <h1 class="text-white"><span class="text-primary">Encuéntranos</span> Aquí</h1>
                     </div>
                     <p class="text-white">Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
                         ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
@@ -515,300 +1225,124 @@
         </div>
     </div>
     <!-- Registration End -->
-
-
     
-
-    <!-- Service Start -->
+    <!-- Destination Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Services</h6>
-                <h1>Tours & Travel Services</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Con la mejor disposición</h6>
+                <h1>Cómo se ve El Punto Del Campo?</h1>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                        <i class="fa fa-2x fa-route mx-auto mb-4"></i>
-                        <h5 class="mb-2">Travel Guide</h5>
-                        <p class="m-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
-                    </div>
+
+
+
+        
+        <div class="gal-grid">
+            <div class="gal-item" onclick="openLightbox(0)">
+                <img src="img/El_Punto_Del_Campo_Imag4.jpeg" alt="Instalación 1" class="gal-image">
+                <div class="gal-overlay">
+                    <span class="gal-icon">🔍</span>
+                    <p class="gal-overlay-text">Ver imagen</p>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                        <i class="fa fa-2x fa-ticket-alt mx-auto mb-4"></i>
-                        <h5 class="mb-2">Ticket Booking</h5>
-                        <p class="m-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
-                    </div>
+            </div>
+            
+            <div class="gal-item" onclick="openLightbox(1)">
+                <img src="img/El_Punto_Del_Campo_Imag2.jpeg" alt="Instalación 2" class="gal-image">
+                <div class="gal-overlay">
+                    <span class="gal-icon">🔍</span>
+                    <p class="gal-overlay-text">Ver imagen</p>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                        <i class="fa fa-2x fa-hotel mx-auto mb-4"></i>
-                        <h5 class="mb-2">Hotel Booking</h5>
-                        <p class="m-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
-                    </div>
+            </div>
+            
+            <div class="gal-item" onclick="openLightbox(2)">
+                <img src="img/El_Punto_Del_Campo_Imag1.jpeg" alt="Instalación 3" class="gal-image">
+                <div class="gal-overlay">
+                    <span class="gal-icon">🔍</span>
+                    <p class="gal-overlay-text">Ver imagen</p>
+                </div>
+            </div>
+            
+            <div class="gal-item" onclick="openLightbox(3)">
+                <img src="img/El_Punto_Del_Campo_Imag5.jpeg" alt="Instalación 4" class="gal-image">
+                <div class="gal-overlay">
+                    <span class="gal-icon">🔍</span>
+                    <p class="gal-overlay-text">Ver imagen</p>
+                </div>
+            </div>
+            
+            <div class="gal-item" onclick="openLightbox(4)">
+                <img src="img/El_Punto_Del_Campo_Imag3.jpeg" alt="Instalación 5" class="gal-image">
+                <div class="gal-overlay">
+                    <span class="gal-icon">🔍</span>
+                    <p class="gal-overlay-text">Ver imagen</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Service End -->
-
-
-    <!-- Team Start -->
-  <!--   <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Guides</h6>
-                <h1>Our Travel Guides</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
-                    <div class="team-item bg-white mb-4">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h5 class="text-truncate">Guide Name</h5>
-                            <p class="m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
-                    <div class="team-item bg-white mb-4">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h5 class="text-truncate">Guide Name</h5>
-                            <p class="m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
-                    <div class="team-item bg-white mb-4">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h5 class="text-truncate">Guide Name</h5>
-                            <p class="m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
-                    <div class="team-item bg-white mb-4">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h5 class="text-truncate">Guide Name</h5>
-                            <p class="m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    
+    <!-- Lightbox Modal -->
+    <div id="galLightbox" class="gal-lightbox">
+        <span class="gal-close" onclick="closeLightbox()">&times;</span>
+        <span class="gal-prev" onclick="changeImage(-1)">❮</span>
+        <span class="gal-next" onclick="changeImage(1)">❯</span>
+        <img id="galLightboxImage" class="gal-lightbox-image" src="" alt="">
+        <div class="gal-counter">
+            <span id="galCurrentImage">1</span> / <span id="galTotalImages">5</span>
         </div>
-    </div> -->
-    <!-- Team End -->
 
-    <!-- Testimonial Start -->
-<!--     <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h6>
-                <h1>What Say Our Clients</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel">
-                <div class="text-center pb-4">
-                    <img class="img-fluid mx-auto" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;" >
-                    <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                        </p>
-                        <h5 class="text-truncate">Client Name</h5>
-                        <span>Profession</span>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img class="img-fluid mx-auto" src="img/testimonial-2.jpg" style="width: 100px; height: 100px;" >
-                    <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                        </p>
-                        <h5 class="text-truncate">Client Name</h5>
-                        <span>Profession</span>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img class="img-fluid mx-auto" src="img/testimonial-3.jpg" style="width: 100px; height: 100px;" >
-                    <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                        </p>
-                        <h5 class="text-truncate">Client Name</h5>
-                        <span>Profession</span>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img class="img-fluid mx-auto" src="img/testimonial-4.jpg" style="width: 100px; height: 100px;" >
-                    <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                        </p>
-                        <h5 class="text-truncate">Client Name</h5>
-                        <span>Profession</span>
-                    </div>
-                </div>
-            </div>
+
+            
         </div>
-    </div> -->
-    <!-- Testimonial End -->
+    </div>
+    <!-- Destination Start -->
 
-
-    <!-- Blog Start -->
-<!--     <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Blog</h6>
-                <h1>Latest From Our Blog</h1>
-            </div>
-            <div class="row pb-3">
-                <div class="col-lg-4 col-md-6 mb-4 pb-2">
-                    <div class="blog-item">
-                        <div class="position-relative">
-                            <img class="img-fluid w-100" src="img/blog-1.jpg" alt="">
-                            <div class="blog-date">
-                                <h6 class="font-weight-bold mb-n1">01</h6>
-                                <small class="text-white text-uppercase">Jan</small>
-                            </div>
-                        </div>
-                        <div class="bg-white p-4">
-                            <div class="d-flex mb-2">
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
-                                <span class="text-primary px-2">|</span>
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
-                            </div>
-                            <a class="h5 m-0 text-decoration-none" href="">Dolor justo sea kasd lorem clita justo diam amet</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 pb-2">
-                    <div class="blog-item">
-                        <div class="position-relative">
-                            <img class="img-fluid w-100" src="img/blog-2.jpg" alt="">
-                            <div class="blog-date">
-                                <h6 class="font-weight-bold mb-n1">01</h6>
-                                <small class="text-white text-uppercase">Jan</small>
-                            </div>
-                        </div>
-                        <div class="bg-white p-4">
-                            <div class="d-flex mb-2">
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
-                                <span class="text-primary px-2">|</span>
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
-                            </div>
-                            <a class="h5 m-0 text-decoration-none" href="">Dolor justo sea kasd lorem clita justo diam amet</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 pb-2">
-                    <div class="blog-item">
-                        <div class="position-relative">
-                            <img class="img-fluid w-100" src="img/blog-3.jpg" alt="">
-                            <div class="blog-date">
-                                <h6 class="font-weight-bold mb-n1">01</h6>
-                                <small class="text-white text-uppercase">Jan</small>
-                            </div>
-                        </div>
-                        <div class="bg-white p-4">
-                            <div class="d-flex mb-2">
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
-                                <span class="text-primary px-2">|</span>
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
-                            </div>
-                            <a class="h5 m-0 text-decoration-none" href="">Dolor justo sea kasd lorem clita justo diam amet</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Blog End -->
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5">
         <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <a href="" class="navbar-brand">
-                    <h1 class="text-primary"><span class="text-white">TRAVEL</span>ER</h1>
+            <div class="col-lg-6 col-md-6 mb-5 mx-auto" style="max-width: 500px;">
+                
+                    <a href="index.html" class="navbar-brand" style="width: 100%;">
+                        <img src="img/Logo_PDC.png" alt="El Punto del Campo"  style="aspect-ratio: auto;">
+                    </a>
                 </a>
-                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                <p>Con compromiso, experiencia y buenos productos, estamos aquí para impulsar el crecimiento de tu campo y tus cosechas. 🚜</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Nuestras Redes</h6>
                 <div class="d-flex justify-content-start">
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://wa.me/573148187437?text=Hola! Quiero información sobre un producto"><i class="fab fa-whatsapp"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://www.instagram.com/elpuntodelcamposas/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://www.facebook.com/people/El-Punto-Del-Campo/100083134880549/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+
+            <div class="col-lg-3 col-md-6 mb-5 mx-auto">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contáctanos</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Calle 10 #8 - 106, Roldanillo, Valle del Cauca</p>
+                <p class="contact-text"><i class="fa fa-phone-alt mr-2"></i>+57 314 818 7437<span style="margin-inline: auto;">|</span><span style="padding-right: 10%;">+57 314 850 7635</span></p>
+                <p class="contact-text"><i class="fa fa-envelope mr-2"></i>elpuntodelcampo@hotmail.com</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Escríbenos</h6>
                 <div class="w-100">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary px-3">Sign Up</button>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" id="userMessage" class="form-control border-light" style="padding: 25px;" placeholder="Tu Mensaje">
+                            <div class="input-group-append">
+                                <a href="" id="whatsappBtn" class="btn btn-primary px-3 d-flex align-items-center" target="_blank">Enviar</a>
+                            </div>
                         </div>
-                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5 mx-auto">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Explora</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                    <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>Sobre Nosotros</a>
+                    <a class="text-white-50 mb-2" href="destination.html"><i class="fa fa-angle-right mr-2"></i>Ubicación</a>
+                    <a class="text-white-50 mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Servicios</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Productos</a>
+                    <a class="text-white-50 mb-2" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contacto</a>
                 </div>
             </div>
         </div>
@@ -816,11 +1350,11 @@
     <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. Todos los derechos reservados.</a>
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
-                <p class="m-0 text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+                <p class="m-0 text-white-50">Diseñado por <a href="https://htmlcodex.com">HTML Codex</a>
                 </p>
             </div>
         </div>
@@ -847,6 +1381,100 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- ===== JS DEL ACORDEÓN ===== -->
+<!-- Puedes mover este script a tu archivo .js externo -->
+<script>
+  function tog(id) {
+    const item = document.getElementById(id);
+    const body = document.getElementById('b-' + id);
+    const isOpen = body.classList.contains('open');
+    body.classList.toggle('open', !isOpen);
+    item.classList.toggle('open', !isOpen);
+  }
+</script>
+
+
+<script>
+// Array con las URLs de las imágenes
+const galImages = [
+    'img/El_Punto_Del_Campo_Imag4.jpeg',
+    'img/El_Punto_Del_Campo_Imag2.jpeg',
+    'img/El_Punto_Del_Campo_Imag1.jpeg',
+    'img/El_Punto_Del_Campo_Imag5.jpeg',
+    'img/El_Punto_Del_Campo_Imag3.jpeg'
+];
+
+let currentImageIndex = 0;
+
+// Abrir lightbox
+function openLightbox(index) {
+    currentImageIndex = index;
+    const lightbox = document.getElementById('galLightbox');
+    const lightboxImage = document.getElementById('galLightboxImage');
+    const currentImage = document.getElementById('galCurrentImage');
+    
+    lightboxImage.src = galImages[currentImageIndex];
+    currentImage.textContent = currentImageIndex + 1;
+    lightbox.classList.add('active');
+    
+    // Prevenir scroll del body
+    document.body.style.overflow = 'hidden';
+}
+
+// Cerrar lightbox
+function closeLightbox() {
+    const lightbox = document.getElementById('galLightbox');
+    lightbox.classList.remove('active');
+    
+    // Restaurar scroll del body
+    document.body.style.overflow = 'auto';
+}
+
+// Cambiar imagen
+function changeImage(direction) {
+    currentImageIndex += direction;
+    
+    // Loop circular
+    if (currentImageIndex < 0) {
+        currentImageIndex = galImages.length - 1;
+    } else if (currentImageIndex >= galImages.length) {
+        currentImageIndex = 0;
+    }
+    
+    const lightboxImage = document.getElementById('galLightboxImage');
+    const currentImage = document.getElementById('galCurrentImage');
+    
+    lightboxImage.src = galImages[currentImageIndex];
+    currentImage.textContent = currentImageIndex + 1;
+}
+
+// Cerrar con tecla ESC
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeLightbox();
+    }
+});
+
+// Navegar con flechas del teclado
+document.addEventListener('keydown', function(e) {
+    const lightbox = document.getElementById('galLightbox');
+    if (lightbox.classList.contains('active')) {
+        if (e.key === 'ArrowLeft') {
+            changeImage(-1);
+        } else if (e.key === 'ArrowRight') {
+            changeImage(1);
+        }
+    }
+});
+
+// Cerrar al hacer click fuera de la imagen
+document.getElementById('galLightbox')?.addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeLightbox();
+    }
+});
+</script>
 </body>
 
 </html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opciones de Diseño de Servicios - Empresarial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sección de Galería -->
+<section class="gal-section">
+    <div class="gal-container">
+        <div class="gal-header">
+            <h2 class="gal-title">Nuestras Instalaciones</h2>
+            <p class="gal-subtitle">Descubra nuestros espacios diseñados para la excelencia empresarial</p>
+        </div>
+        
+        <div class="gal-grid">
+            <div class="gal-item" onclick="openLightbox(0)">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800" alt="Instalación 1" class="gal-image">
+                <div class="gal-overlay">
+                    <span class="gal-icon">🔍</span>
+                    <p class="gal-overlay-text">Ver imagen</p>
+                </div>
+            </div>
+            
+            <div class="gal-item" onclick="openLightbox(1)">
+                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800" alt="Instalación 2" class="gal-image">
+                <div class="gal-overlay">
+                    <span class="gal-icon">🔍</span>
+                    <p class="gal-overlay-text">Ver imagen</p>
+                </div>
+            </div>
+            
+            <div class="gal-item" onclick="openLightbox(2)">
+                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800" alt="Instalación 3" class="gal-image">
+                <div class="gal-overlay">
+                    <span class="gal-icon">🔍</span>
+                    <p class="gal-overlay-text">Ver imagen</p>
+                </div>
+            </div>
+            
+            <div class="gal-item" onclick="openLightbox(3)">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800" alt="Instalación 4" class="gal-image">
+                <div class="gal-overlay">
+                    <span class="gal-icon">🔍</span>
+                    <p class="gal-overlay-text">Ver imagen</p>
+                </div>
+            </div>
+            
+            <div class="gal-item" onclick="openLightbox(4)">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800" alt="Instalación 5" class="gal-image">
+                <div class="gal-overlay">
+                    <span class="gal-icon">🔍</span>
+                    <p class="gal-overlay-text">Ver imagen</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Lightbox Modal -->
+    <div id="galLightbox" class="gal-lightbox">
+        <span class="gal-close" onclick="closeLightbox()">&times;</span>
+        <span class="gal-prev" onclick="changeImage(-1)">❮</span>
+        <span class="gal-next" onclick="changeImage(1)">❯</span>
+        <img id="galLightboxImage" class="gal-lightbox-image" src="" alt="">
+        <div class="gal-counter">
+            <span id="galCurrentImage">1</span> / <span id="galTotalImages">5</span>
+        </div>
+    </div>
+</section>
+
+
+</body>
+<script>
+    // Array con las URLs de las imágenes
+const galImages = [
+    'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920',
+    'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1920',
+    'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1920',
+    'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1920',
+    'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1920'
+];
+
+let currentImageIndex = 0;
+
+// Abrir lightbox
+function openLightbox(index) {
+    currentImageIndex = index;
+    const lightbox = document.getElementById('galLightbox');
+    const lightboxImage = document.getElementById('galLightboxImage');
+    const currentImage = document.getElementById('galCurrentImage');
+    
+    lightboxImage.src = galImages[currentImageIndex];
+    currentImage.textContent = currentImageIndex + 1;
+    lightbox.classList.add('active');
+    
+    // Prevenir scroll del body
+    document.body.style.overflow = 'hidden';
+}
+
+// Cerrar lightbox
+function closeLightbox() {
+    const lightbox = document.getElementById('galLightbox');
+    lightbox.classList.remove('active');
+    
+    // Restaurar scroll del body
+    document.body.style.overflow = 'auto';
+}
+
+// Cambiar imagen
+function changeImage(direction) {
+    currentImageIndex += direction;
+    
+    // Loop circular
+    if (currentImageIndex < 0) {
+        currentImageIndex = galImages.length - 1;
+    } else if (currentImageIndex >= galImages.length) {
+        currentImageIndex = 0;
+    }
+    
+    const lightboxImage = document.getElementById('galLightboxImage');
+    const currentImage = document.getElementById('galCurrentImage');
+    
+    lightboxImage.src = galImages[currentImageIndex];
+    currentImage.textContent = currentImageIndex + 1;
+}
+
+// Cerrar con tecla ESC
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeLightbox();
+    }
+});
+
+// Navegar con flechas del teclado
+document.addEventListener('keydown', function(e) {
+    const lightbox = document.getElementById('galLightbox');
+    if (lightbox.classList.contains('active')) {
+        if (e.key === 'ArrowLeft') {
+            changeImage(-1);
+        } else if (e.key === 'ArrowRight') {
+            changeImage(1);
+        }
+    }
+});
+
+// Cerrar al hacer click fuera de la imagen
+document.getElementById('galLightbox')?.addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeLightbox();
+    }
+});
+</script>
+
+
+</html>
