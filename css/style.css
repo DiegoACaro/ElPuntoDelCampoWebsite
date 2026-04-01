@@ -12024,15 +12024,9 @@ flex: 0 0 100%;
     text-align: center;
   }
 
-    .carousel-inner {
-    display: flex;
-    transition: transform 0.3s ease-out;
-  }
+
   
-    .carousel-fade .carousel-item {
-    flex: 0 0 100%;
-    opacity: 1; /* Siempre visible en móvil */
-  }
+
 }
 
 
