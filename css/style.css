@@ -12025,7 +12025,7 @@ flex: 0 0 100%;
   }
     .carousel-fade .carousel-item {
     flex: 0 0 100%;
-    opacity: 0.7; /* Siempre visible en móvil */
+    opacity: 1; /* Siempre visible en móvil */
   }
 }
 
