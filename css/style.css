@@ -11893,7 +11893,7 @@ flex: 0 0 100%;
   border-radius: 8px;
   display: block;
 }
-
+/* 
 .carousel-fade .carousel-item {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -11901,7 +11901,7 @@ flex: 0 0 100%;
 
 .carousel-fade .carousel-item.active {
   opacity: 1;
-}
+} */
 
 
 .carousel-indicators {
