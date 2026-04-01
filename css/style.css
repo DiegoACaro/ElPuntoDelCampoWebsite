@@ -11752,12 +11752,19 @@ h6,
 
 .chips {
   display: flex;
-  flex-wrap: wrap;
+flex: 0 0 100%;
   gap: 7px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .chip {
-  font-size: 11px;
+  font-size: 16px;
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   padding: 5px 11px;
   border-radius: 7px;
@@ -11771,6 +11778,7 @@ h6,
 .chip:hover {
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.28);
+  color: #fff;
 }
 /* ===== COLORES POR CATEGORÍA (AJUSTADOS Y CONSISTENTES) ===== */
 
@@ -11832,6 +11840,7 @@ h6,
   align-items: flex-start;
   padding: 18px;
   background: rgba(0, 0, 0, 0.22);
+  flex-wrap: wrap;
 }
 
 .acc-body-text {
@@ -11989,6 +11998,8 @@ h6,
 @media (max-width: 568px) {
   .acc-body-content {
     flex-direction: column;
+    flex-wrap: nowrap;
+    
   }
   .acc-body-text {
     flex: unset;
@@ -11997,6 +12008,20 @@ h6,
   .carouselprod {
     max-width: 100%;
     margin: 0 5%;
+  }
+  .chips{
+    flex: unset;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .chip {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 
