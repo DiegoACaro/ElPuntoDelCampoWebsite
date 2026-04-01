@@ -12023,6 +12023,10 @@ flex: 0 0 100%;
     align-items: center;
     text-align: center;
   }
+    .carousel-fade .carousel-item {
+    flex: 0 0 100%;
+    opacity: 0.7; /* Siempre visible en móvil */
+  }
 }
 
 
